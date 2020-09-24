@@ -1,890 +1,241 @@
-patente_barco,pais,nombre
-DK4889,Portugal,Bristol
-QI7769,Japon,Albanaise
-RJ2733,Estados Unidos,Almirante Devries
-NN8091,Jamaica,Broaderschap
-PV7666,Austria,Boulogne
-NT2280,Colombia,Premio Dreadnought
-UH1378,Sudafrica,Albian
-UJ2611,Islas Malvinas,Bouclier
-XG7925,Filipinas,Albemarle
-FM3163,Finlandia,Albany
-AI9121,Jamaica,Bowen
-TG8958,España,Bergantin
-ZP4420,Chile,magnolia
-OI4579,Egipto,Gulnare
-NX3376,Egipto,Albatros
-GS9404,Filipinas,Bramham
-IX1197,Italia,Boxer
-GS9663,Polonia,broadwater
-IX1197,Italia,Boxer
-KM2551,Republica Dominicana,Adepto
-SV9482,Panama,Bleasdale
-RO9221,Cuba,Descarado
-RP8314,Ecuador,brantford
-HI3831,Belgica,Brevdrageren
-MY3367,Portugal,Zarza
-WW2485,Portugal,Acanto
-XP9141,Jamaica,Adan y Eva
-VT2032,Austria,Asesor
-QJ1463,Tailandia,dubbo
-OF5460,Chile,Boscawen
-OT5458,Mexico,Aconito
-UZ5981,Cuba,Brissenden
-PJ3020,Japon,bowmanville
-KC2936,Noruega,Agua Negra
-RK2324,Republica Dominicana,Africa
-XK7318,Argentina,Acacia
-MU6547,Sudafrica,Eneas
-XP9141,Jamaica,Adan y Eva
-RA3983,Finlandia,Bonito
-NN2774,Tailandia,Drochterland
-PJ3020,Japon,bowmanville
-UZ5981,Cuba,Brissenden
-HB4367,Egipto,Breda
-YC1851,Austria,Bonne Ciudadana
-TJ7818,Portugal,Blankney
-CI3218,Siria,Agamenon
-RO9221,Cuba,Descarado
-QL4591,Siria,albacora
-FS3778,Indonesia,Acteon
-LI5894,Singapur,Driada
-RP8314,Ecuador,brantford
-DG5218,Filipinas,Drury
-VW7522,Australia,acteon
-AM9504,Paraguay,Chaqueta de sport
-PZ1913,Nueva Zelanda,Conductor
-UL8619,India,blencathra
-VH2584,Ecuador,Boreas
-UJ2611,Islas Malvinas,Bouclier
-TQ5114,Finlandia,Gurkha
-AU5998,Irlanda,Abigail
-PJ8392,Republica Dominicana,Buenaventura
-PJ8392,Republica Dominicana,BuenaventuraDT6703,Finlandia,Britania
-II3534,Noruega,bodenham
-GC3280,Islas Malvinas,Acorazado
-DQ3759,India,Branlebas
-FO3430,India,brearley
-AU5998,Irlanda,Abigail
-HE7029,India,Adonis
-HE2921,Dinamarca,Brigadier
-GT9752,España,Albrighton
-MO4968,España,Adversario
-UZ5981,Cuba,Brissenden
-MW6341,Tailandia,Albert
-TR8211,Australia,Brema
-FS3778,Indonesia,Acteon
-ON7101,Argentina,Abundante
-II3534,Noruega,bodenham
-DV6261,Belgica,Bridgewater
-PZ3477,Nicaragua,Afridi
-DA9671,Suiza,Botha
-KQ3854,Nicaragua,Bravucon
-PJ5481,Argentina,Abelia
-RV9799,Dinamarca,Blanche
-OM4230,Paraguay,Blyth
-XL6992,Costa Rica,Bootle
-HK6767,Sudafrica,Bridport
-XB6912,Argentina,Dovey
-EE2109,Nueva Zelanda,Premio dragon
-LW4637,Brasil,Alarico
-DA9671,Suiza,Botha
-SM2508,Colombia,Castillo bramber
-HK6767,Sudafrica,Bridport
-VP2429,Australia,Premio aventura
-PZ1913,Nueva Zelanda,Conductor
-FE1567,Panama,drummondville
-OH1392,Jamaica,Broadway
-LX6914,Qatar,Abercrombie
-ON7101,Argentina,Abundante
-UJ2611,Islas Malvinas,Bouclier
-LI5894,Singapur,Driada
-FU8868,Panama,Alberta
-WW2485,Portugal,Acanto
-DY6365,Irlanda,Dubford
-RW4421,Suiza,Downley
-ID7819,Panama,As
-VG7905,Tailandia,Brakel
-AU5998,Irlanda,Abigail
-HI3831,Belgica,Brevdrageren
-AL8743,Filipinas,Adelaide
-SL2391,Sudafrica,Alarma
-BY5212,Colombia,aboukir
-CG7403,Japon,Castillo bodiam
-ED5736,Chile,guysborough
-RV9799,Dinamarca,Blanche
-BB5259,Brasil,Flor
-OC4762,Finlandia,Actividad
-ZV9679,Australia,Blean
-HV2199,Mexico,acasta
-WW2485,Portugal,Acanto
-ZV8179,Indonesia,brockville
-NL7862,Nueva Zelanda,Bottisham
-OB9598,Vietnam,Albuera
-HI3831,Belgica,Brevdrageren
-RH8308,Dinamarca,Agrega un
-EI5834,Polonia,Bourdelais
-NX3376,Egipto,Albatros
-PR9667,Noruega,Bendicion
-YN4644,Islas Malvinas,Bellota
-YP3858,Nicaragua,Sumador
-DY6365,Irlanda,Dubford
-VW7522,Australia,acteon
-EE2109,Nueva Zelanda,Premio dragon
-KY2131,Paraguay,alberni
-PA1651,Islas Malvinas,Bumerang
-FI2331,Austria,Bolton Castle
-OM4230,Paraguay,Blyth
-FS3778,Indonesia,Acteon
-IX1197,Italia,Boxer
-EI5702,Italia,Admirable
-MO4968,España,Adversario
+FN4513,Qatar,Brinkley
 GF5994,España,Alcantara
-BZ3311,Noruega,Floracion
-HF4402,Austria,Brillante
-OA5815,Islas Malvinas,Brinton
-WF7217,Islas Malvinas,achates
-TS8958,Indonesia,Castillo bridgnorth
-AI9121,Jamaica,Bowen
-RO9221,Cuba,Descarado
-EH9187,Qatar,Aberdeen
-NT2280,Colombia,Premio Dreadnought
-SL2391,Sudafrica,Alarma
-RP8314,Ecuador,brantford
-XH5466,Australia,Frontera
-VR7517,Islas Malvinas,albury
-VI4743,Canada,Calypso
-CG7403,Japon,Castillo bodiam
-TS8958,Indonesia,Castillo bridgnorth
-AU5998,Irlanda,Abigail
-EV7485,Qatar,Bravo
-LV7419,Qatar,Bronington
-SV9482,Panama,Bleasdale
-QL4591,Siria,albacora
-OJ8771,España,Activo
-LA5643,Siria,abergavenny
-FO3430,India,brearley
-HW2014,Colombia,Sabueso
-EV7485,Qatar,Bravo
-XP9141,Jamaica,Adan y Eva
-CE1914,Corea,downham
-EV7485,Qatar,Bravo
-XK7318,Argentina,Acacia
-VW7522,Australia,acteon
-LD3618,Republica Dominicana,Braak
-HF1544,Jamaica,Alcaston
-HH5472,Republica Dominicana,Boulston
-MN1612,Italia,Madera negra
-QJ1463,Tailandia,dubbo
-PR9667,Noruega,Bendicion
-EI5834,Polonia,Bourdelais
-FE1567,Panama,drummondville
-ZC6249,Brasil,Pato
-LR2069,Panama,Brecon
-HI3831,Belgica,Brevdrageren
-IF9396,Portugal,Braave
-IX1197,Italia,Boxer
-EV7485,Qatar,Bravo
-CI3218,Siria,Agamenon
-VX5561,Estados Unidos,Abundancia
-OF5460,Chile,Boscawen
-NT2280,Colombia,Premio Dreadnought
-TG8958,España,Bergantin
-FM3163,Finlandia,Albany
-UE6214,Ecuador,Bonavoila
-HH5472,Republica Dominicana,Boulston
-OT5458,Mexico,Aconito
-GS7205,España,Aventuras
-UO8744,Paraguay,Brezo
-HH5472,Republica Dominicana,Boulston
-OF5956,Egipto,Adur
-MU6547,Sudafrica,Eneas
-YB3879,Austria,Bolton
-UW2735,Austria,Achille
-HH5023,Republica Dominicana,Bolebroke
-OH1392,Jamaica,Broadway
-QI7769,Japon,Albanaise
-PV6712,Paraguay,Brocklesby
-PZ1913,Nueva Zelanda,Conductor
-LD3618,Republica Dominicana,Braak
-CG7403,Japon,Castillo bodiam
-SL2391,Sudafrica,Alarma
-DQ3759,India,Branlebas
-WK4832,Brasil,Brixham
-AU6167,Argentina,Affleck
-EV7485,Qatar,Bravo
-CC4639,Polonia,Energico
-HB3228,Singapur,Habil
-KC2936,Noruega,Agua Negra
-UZ5981,Cuba,Brissenden
-HE7029,India,Adonis
-FU8868,Panama,Alberta
-UO8744,Paraguay,Brezo
-KY2131,Paraguay,alberni
-BF7024,Finlandia,Alban
-IT1233,Filipinas,Premio brillante
-PM8536,Canada,Abdiel
-FU8868,Panama,Alberta
-FA3127,Chile,Brandon
-DS0478,Chile,Penelope
-KH8053,Belgica,Premio Dover
-LW4637,Brasil,Alarico
-OT5458,Mexico,Aconito
-OF5460,Chile,Boscawen
-KC2936,Noruega,Agua Negra
-LR2069,Panama,Brecon
-WX5990,Argentina,Bogam
-GJ5946,Noruega,Breconshire
-UO8744,Paraguay,Brezo
-NX3376,Egipto,Albatros
-EB3227,Peru,Bossington
-IX1197,Italia,Boxer
-YG2900,Sudafrica,Almirante Farragut
 DT6703,Finlandia,Britania
-MU6547,Sudafrica,Eneas
-BF7024,Finlandia,Alban
-FO3430,India,brearley
-PU5101,Peru,aventura Galera
-HB3228,Singapur,Habil
-WF3051,Singapur,Brereton
-TJ7818,Portugal,Blankney
-MZ2239,Egipto,Blickling
-RV9799,Dinamarca,Blanche
-AM9504,Paraguay,Chaqueta de sport
-KQ3854,Nicaragua,Bravucon
-LD3618,Republica Dominicana,Braak
-LS5992,Costa Rica,Abelardo
-YB1434,Belgica,Boyne
-OB9598,Vietnam,Albuera
-BN3951,Italia,brigandine
-FO3430,India,brearley
-OJ8771,España,Activo
-OE1789,Argentina,BLAIRMORE
-WI9449,Suiza,Bligh
-AL8743,Filipinas,Adelaide
-OO2266,Qatar,druida
-IX1197,Italia,Boxer
-LA5643,Siria,abergavenny
-YT2845,Mexico,gitano
-AM9504,Paraguay,Chaqueta de sport
-EY2745,Japon,Aberfoyle
-PV7666,Austria,Boulogne
-KH8053,Belgica,Premio Dover
-XG7925,Filipinas,Albemarle
-IX1197,Italia,Boxer
-FS3778,Indonesia,Acteon
-IJ4552,Mexico,Bonetta
 OA5815,Islas Malvinas,Brinton
-OF5460,Chile,Boscawen
-RK9162,Argentina,Brigham
-MN4984,Japon,Bombay
-VC7492,Singapur,Abeille
-QL4591,Siria,albacora
-FO3430,India,brearley
-NQ5495,Panama,Brighton
-RH8308,Dinamarca,Agrega un
-UZ5981,Cuba,Brissenden
-RY9242,Canada,pechiazul
-AU6167,Argentina,Affleck
-KM2551,Republica Dominicana,Adepto
-LV7419,Qatar,Bronington
-MW6341,Tailandia,Albert
-QC1164,España,Generosidad
-LW6201,Japon,Braithwaite
-TJ7818,Portugal,Blankney
-AL8743,Filipinas,Adelaide
-LX6914,Qatar,Abercrombie
-HF4402,Austria,Brillante
-VT2032,Austria,Asesor
-WC2925,Costa Rica,briseis
-RK9162,Argentina,Brigham
-YW8268,Cuba,britanico
-PR9667,Noruega,Bendicion
-PA1651,Islas Malvinas,Bumerang
-EE2109,Nueva Zelanda,Premio dragon
-VH2584,Ecuador,Boreas
-BI5654,Peru,Consejo
-OM4230,Paraguay,Blyth
-VI4743,Canada,Calypso
-IV2746,Argentina,Blandford
-BN4195,Costa Rica,acheron
-YW8268,Cuba,britanico
-JR2308,Tailandia,britomart
 RQ2918,Dinamarca,Libelula
-OJ8771,España,Activo
-VY5330,Australia,brenchley
-AI9121,Jamaica,Bowen
-PJ5481,Argentina,Abelia
-IH6707,Nicaragua,Boston
-FE1567,Panama,drummondville
-HB3228,Singapur,Habil
-LR2069,Panama,Brecon
-DV6261,Belgica,Bridgewater
-BF7024,Finlandia,Alban
-GE9618,Colombia,Dromedario
-CC4639,Polonia,Energico
-ED5736,Chile,guysborough
-DK4889,Portugal,Bristol
-GT9752,España,Albrighton
-ON7101,Argentina,Abundante
-WF7217,Islas Malvinas,achates
-ID7819,Panama,As
-MW6341,Tailandia,Albert
-OJ8771,España,Activo
-ZP4420,Chile,magnolia
-UL8619,India,blencathra
-MO4425,Filipinas,abondance
-IG9597,Indonesia,Aetna
-TQ5114,Finlandia,Gurkha
-SL2391,Sudafrica,Alarma
-OT5458,Mexico,Aconito
-RC8468,Estados Unidos,Borraja
-MZ9845,Italia,Blakeney
-GS9663,Polonia,broadwater
-UY2987,Islas Malvinas,Continuar
-EI5702,Italia,Admirable
-OO2266,Qatar,druida
-NQ5495,Panama,Brighton
-NX3376,Egipto,Albatros
-PZ3477,Nicaragua,Afridi
-BI5654,Peru,Consejo
-WK4832,Brasil,Brixham
-NN8091,Jamaica,Broaderschap
-FU8868,Panama,Alberta
-HP3120,Panama,gympie
-TR8211,Australia,Brema
-GS9404,Filipinas,Bramham
-SL2391,Sudafrica,Alarma
-NN8091,Jamaica,Broaderschap
-KC2936,Noruega,Agua Negra
-OF1501,Noruega,Blaxton
-UL8619,India,blencathra
-WD8846,Noruega,Blake
-ST8633,Mexico,Aberford
-YE6286,Argentina,Castillo de Bowes
-ON7101,Argentina,Abundante
-TG8958,España,Bergantin
-MZ9845,Italia,Blakeney
-XK7318,Argentina,Acacia
-RC8468,Estados Unidos,Borraja
-BI5654,Peru,Consejo
-OY7209,Reino Unido,Bombardear
-EF7582,Belgica,Aquiles
-YC1851,Austria,Bonne Ciudadana
-PJ8392,Republica Dominicana,Buenaventura
-GE9618,Colombia,Dromedario
-RV9799,Dinamarca,Blanche
-ED5736,Chile,guysborough
-AU6167,Argentina,Affleck
-MN1612,Italia,Madera negra
-DY6365,Irlanda,Dubford
-NN2774,Tailandia,Drochterland
-MZ9845,Italia,Blakeney
-HE8199,Jamaica,Brampton
-XL6992,Costa Rica,Bootle
-IJ4552,Mexico,Bonetta
-SG9128,Japon,Avanzar
-OH1392,Jamaica,Broadway
-UH6836,Portugal,Aladdin
-TO8113,Austria,Almirantazgo
-IV2746,Argentina,Blandford
-GC3280,Islas Malvinas,Acorazado
-OO2266,Qatar,druida
-AY3986,Islas Malvinas,Bradfield
-CC4639,Polonia,Energico
-NP8695,Filipinas,Brock
-CE1914,Corea,downham
-VI4743,Canada,Calypso
-ST8633,Mexico,Aberford
-MY3367,Portugal,Zarza
-IG9597,Indonesia,Aetna
-ST8633,Mexico,Aberford
-VI7863,Chile,Esclava
-GS7205,España,Aventuras
-RP8314,Ecuador,brantford
-TS8958,Indonesia,Castillo bridgnorth
-MO4425,Filipinas,abondance
-VY5330,Australia,brenchley
-UO8744,Paraguay,Brezo
-DA9671,Suiza,Botha
-OR9516,Singapur,Espada
-ZV9679,Australia,Blean
-ZC6249,Brasil,Pato
-HK6767,Sudafrica,Bridport
-PA1651,Islas Malvinas,Bumerang
-PR9667,Noruega,Bendicion
-LX6914,Qatar,Abercrombie
-WF7217,Islas Malvinas,achates
-EH9187,Qatar,Aberdeen
-WK4832,Brasil,Brixham
-GT9752,España,Albrighton
-FN4513,Qatar,Brinkley
-ZX2922,India,Abbotsham
-HV2199,Mexico,acasta
-OM4230,Paraguay,Blyth
-RK2324,Republica Dominicana,Africa
-EI5702,Italia,Admirable
-VT2032,Austria,Asesor
-PM8536,Canada,Abdiel
-LF8633,Suiza,Blenheim
-FM3163,Finlandia,Albany
-UH1378,Sudafrica,Albian
+KY2131,Paraguay,alberni
 AU5998,Irlanda,Abigail
-LW6201,Japon,Braithwaite
-PJ5481,Argentina,Abelia
-EB3227,Peru,Bossington
-RY9242,Canada,pechiazul
-HP3120,Panama,gympie
-QI7769,Japon,Albanaise
+RH8308,Dinamarca,Agrega un
+HH5023,Republica Dominicana,Bolebroke
+DK4889,Portugal,Bristol
+HV2199,Mexico,acasta
+OF1501,Noruega,Blaxton
+IW2489,Australia,Eolo
+MY3367,Portugal,Zarza
+EY2745,Japon,Aberfoyle
+KC2936,Noruega,Agua Negra
+GJ5946,Noruega,Breconshire
+BB5259,Brasil,Flor
+TJ7818,Portugal,Blankney
+UY2987,Islas Malvinas,Continuar
+LW4637,Brasil,Alarico
+RC8468,Estados Unidos,Borraja
+SV9482,Panama,Bleasdale
+VX5561,Estados Unidos,Abundancia
+LF8633,Suiza,Blenheim
+CG7403,Japon,Castillo bodiam
+DA9671,Suiza,Botha
+
+YX2002,Islas Malvinas,Valiente
+TG8958,España,Bergantin
 ZV8179,Indonesia,brockville
-HF4402,Austria,Brillante
-NX3376,Egipto,Albatros
-FN4513,Qatar,Brinkley
-KH8053,Belgica,Premio Dover
-FN4513,Qatar,Brinkley
-GF5994,España,Alcantara
+UJ2611,Islas Malvinas,Bouclier
+EB3227,Peru,Bossington
+FS3778,Indonesia,Acteon
+CI3218,Siria,Agamenon
+OF5956,Egipto,Adur
+QJ1463,Tailandia,dubbo
+BN4195,Costa Rica,acheron
+FM3163,Finlandia,Albany
+HE2921,Dinamarca,Brigadier
+PR9667,Noruega,Bendicion
+OJ8771,España,Activo
+LN8777,Tailandia,Bridlington
+WI9449,Suiza,Bligh
+OO2266,Qatar,druida
+OC4762,Finlandia,Actividad
 PV7666,Austria,Boulogne
-EI5834,Polonia,Bourdelais
-XK7318,Argentina,Acacia
-TS8958,Indonesia,Castillo bridgnorth
-AL8743,Filipinas,Adelaide
+WK4832,Brasil,Brixham
+GS9663,Polonia,broadwater
+IJ4552,Mexico,Bonetta
+OR9516,Singapur,Espada
+OB9598,Vietnam,Albuera
+ZX2922,India,Abbotsham
+EE2109,Nueva Zelanda,Premio dragon
 GC3280,Islas Malvinas,Acorazado
-YB1434,Belgica,Boyne
-EG8528,Brasil,Abrahan
+AL8743,Filipinas,Adelaide
+VI4743,Canada,Calypso
+UH1378,Sudafrica,Albian
+XK7318,Argentina,Acacia
+XB6912,Argentina,Dovey
+BZ3311,Noruega,Floracion
+HF1544,Jamaica,Alcaston
+LW6201,Japon,Braithwaite
+AI2283,Reino Unido,blackwall
+MZ9845,Italia,Blakeney
 VW7522,Australia,acteon
-IF9396,Portugal,Braave
+AV9914,Costa Rica,Broadley
+AM9504,Paraguay,Chaqueta de sport
+LA5643,Siria,abergavenny
+SL2391,Sudafrica,Alarma
+YG2900,Sudafrica,Almirante Farragut
+VY5330,Australia,brenchley
+XN4914,Peru,Agudo
+VC7492,Singapur,Abeille
+RJ2733,Estados Unidos,Almirante Devries
+IT1233,Filipinas,Premio brillante
+DQ3759,India,Branlebas
+JD8184,Mexico,Refriega
+TQ5114,Finlandia,Gurkha
+NN8091,Jamaica,Broaderschap
+HH5472,Republica Dominicana,Boulston
+HI3831,Belgica,Brevdrageren
+YB8271,Siria,Premio consejos
+PB7290,Reino Unido,Drogheda
+KH8053,Belgica,Premio Dover
+GE9618,Colombia,Dromedario
+CC4639,Polonia,Energico
+PZ1913,Nueva Zelanda,Conductor
+AI9121,Jamaica,Bowen
+UL8619,India,blencathra
+OY7209,Reino Unido,Bombardear
+IG9597,Indonesia,Aetna
+LR2069,Panama,Brecon
+FI2331,Austria,Bolton Castle
+GM1638,Islas Malvinas,Afrikander
+EX4705,Japon,Firme
+AY3986,Islas Malvinas,Bradfield
+DV6261,Belgica,Bridgewater
+QI7769,Japon,Albanaise
+LX6914,Qatar,Abercrombie
+VG7905,Tailandia,Brakel
+UW2735,Austria,Achille
+OT5458,Mexico,Aconito
+YP3858,Nicaragua,Sumador
+RA3983,Finlandia,Bonito
+FO3430,India,brearley
+DY6365,Irlanda,Dubford
+UZ5981,Cuba,Brissenden
+MO4968,España,Adversario
+OE1789,Argentina,BLAIRMORE
+GS9404,Filipinas,Bramham
+LN6036,Republica Dominicana,Africaine
+NN2774,Tailandia,Drochterland
+ZC6249,Brasil,Pato
+ZV9679,Australia,Blean
+VT6220,Mexico,Abisinia
+YN4644,Islas Malvinas,Bellota
+FU8868,Panama,Alberta
+IH6707,Nicaragua,Boston
+WD8846,Noruega,Blake
+VT2032,Austria,Asesor
+XP9141,Jamaica,Adan y Eva
+UE6214,Ecuador,Bonavoila
+EG8528,Brasil,Abrahan
+DC7834,Qatar,Sable
+EI5702,Italia,Admirable
+HI7513,Suiza,Brayford
+EH9187,Qatar,Aberdeen
+YB1434,Belgica,Boyne
+NP8695,Filipinas,Brock
+NX3376,Egipto,Albatros
+RP8314,Ecuador,brantford
+LD3618,Republica Dominicana,Braak
+QC1164,España,Generosidad
+PJ3020,Japon,bowmanville
+SG9128,Japon,Avanzar
+PU5101,Peru,aventura Galera
+OI4579,Egipto,Gulnare
+VR7517,Islas Malvinas,albury
+SQ8557,Vietnam,Terrible
+UH6836,Portugal,Aladdin
+QA2495,Nueva Zelanda,Acertif
+OF5460,Chile,Boscawen
+LI5894,Singapur,Driada
+PK9613,Paraguay,Dromio
 GT9752,España,Albrighton
 BY4314,Suiza,Resplandor
-ED5736,Chile,guysborough
-UO8744,Paraguay,Brezo
-LN8777,Tailandia,Bridlington
-YC1851,Austria,Bonne Ciudadana
-YP3858,Nicaragua,Sumador
-IJ4552,Mexico,Bonetta
-NQ5495,Panama,Brighton
+XG7925,Filipinas,Albemarle
+WC8293,Australia,Campanilla
 RW4421,Suiza,Downley
-TS8958,Indonesia,Castillo bridgnorth
-HH5472,Republica Dominicana,Boulston
-OJ8771,España,Activo
-GM1638,Islas Malvinas,Afrikander
+WC2925,Costa Rica,briseis
+YT2845,Mexico,gitano
+AU6167,Argentina,Affleck
+FE1567,Panama,drummondville
+XH5466,Australia,Frontera
+VI7863,Chile,Esclava
+NL7862,Nueva Zelanda,Bottisham
+HE5247,Polonia,Negrita
+RY9242,Canada,pechiazul
+ON7101,Argentina,Abundante
+TO8113,Austria,Almirantazgo
+HW2014,Colombia,Sabueso
 II3534,Noruega,bodenham
-KM2551,Republica Dominicana,Adepto
-LI5894,Singapur,Driada
-EY2745,Japon,Aberfoyle
-HF4402,Austria,Brillante
-OF5460,Chile,Boscawen
-WF3051,Singapur,Brereton
-OR9516,Singapur,Espada
-RK2324,Republica Dominicana,Africa
-LA5643,Siria,abergavenny
-YG2900,Sudafrica,Almirante Farragut
-RO9221,Cuba,Descarado
-SL2391,Sudafrica,Alarma
-QA2495,Nueva Zelanda,Acertif
-KH8053,Belgica,Premio Dover
-NN2774,Tailandia,Drochterland
-PJ5481,Argentina,Abelia
-TS8958,Indonesia,Castillo bridgnorth
-MZ9845,Italia,Blakeney
-MO4425,Filipinas,abondance
-EH9187,Qatar,Aberdeen
-VW7522,Australia,acteon
-RO9221,Cuba,Descarado
 WF7217,Islas Malvinas,achates
 HE8199,Jamaica,Brampton
-EF7582,Belgica,Aquiles
-CC4639,Polonia,Energico
-II3534,Noruega,bodenham
-TQ5114,Finlandia,Gurkha
-YX2002,Islas Malvinas,Valiente
-VY5330,Australia,brenchley
-EI5702,Italia,Admirable
-DG5218,Filipinas,Drury
-UH1378,Sudafrica,Albian
-OI4579,Egipto,Gulnare
-VI4743,Canada,Calypso
-PJ8392,Republica Dominicana,Buenaventura
-TJ7818,Portugal,Blankney
-RQ2918,Dinamarca,Libelula
-BI5654,Peru,Consejo
-QI7769,Japon,Albanaise
-ST8633,Mexico,Aberford
-EE2109,Nueva Zelanda,Premio dragon
-GS9404,Filipinas,Bramham
-ED5736,Chile,guysborough
-AU6167,Argentina,Affleck
-GT9752,España,Albrighton
-GJ5946,Noruega,Breconshire
-ZP4420,Chile,magnolia
-PK9613,Paraguay,Dromio
-TJ7818,Portugal,Blankney
-WX5990,Argentina,Bogam
-RW4421,Suiza,Downley
-EV7485,Qatar,Bravo
-UH6836,Portugal,Aladdin
-AL8743,Filipinas,Adelaide
-IV2746,Argentina,Blandford
-YN4644,Islas Malvinas,Bellota
-RQ2918,Dinamarca,Libelula
-AV9914,Costa Rica,Broadley
-ZP4420,Chile,magnolia
-EX4705,Japon,Firme
-VX5561,Estados Unidos,Abundancia
-VI9753,Nicaragua,drumheller
-NQ5495,Panama,Brighton
-YB1434,Belgica,Boyne
-PZ3477,Nicaragua,Afridi
-BB5259,Brasil,Flor
-LI5894,Singapur,Driada
-MO4968,España,Adversario
-RJ2733,Estados Unidos,Almirante Devries
-UW2735,Austria,Achille
-BF7024,Finlandia,Alban
-ST8633,Mexico,Aberford
-JR2308,Tailandia,britomart
-MU6547,Sudafrica,Eneas
-GF5994,España,Alcantara
-ON7101,Argentina,Abundante
-XG4556,Nicaragua,Rubia
-WK4832,Brasil,Brixham
-YG2900,Sudafrica,Almirante Farragut
-ON7101,Argentina,Abundante
-NK1201,Ecuador,Castillo de Bombay
-PJ3020,Japon,bowmanville
-AI2283,Reino Unido,blackwall
-QL4591,Siria,albacora
-RK2324,Republica Dominicana,Africa
-OT5458,Mexico,Aconito
-WF3051,Singapur,Brereton
-YX2002,Islas Malvinas,Valiente
-WC2925,Costa Rica,briseis
-HF4402,Austria,Brillante
-LX6914,Qatar,Abercrombie
-VG7905,Tailandia,Brakel
-BN4195,Costa Rica,acheron
-PJ3020,Japon,bowmanville
-NX3376,Egipto,Albatros
-MZ9845,Italia,Blakeney
-ED5736,Chile,guysborough
-HH5023,Republica Dominicana,Bolebroke
-XL6992,Costa Rica,Bootle
-FN4513,Qatar,Brinkley
-ID7819,Panama,As
-FN4513,Qatar,Brinkley
-UE6214,Ecuador,Bonavoila
-DS0478,Chile,Penelope
-GT9752,España,Albrighton
-UH1378,Sudafrica,Albian
-KC2936,Noruega,Agua Negra
-PK9613,Paraguay,Dromio
-OF5956,Egipto,Adur
-XP9141,Jamaica,Adan y Eva
-PZ3477,Nicaragua,Afridi
-FE1567,Panama,drummondville
-LD3618,Republica Dominicana,Braak
-WK4832,Brasil,Brixham
-HB4367,Egipto,Breda
-LF8633,Suiza,Blenheim
-TR8211,Australia,Brema
-WC2925,Costa Rica,briseis
 KQ3854,Nicaragua,Bravucon
-QL4591,Siria,albacora
-YT2845,Mexico,gitano
-MO4425,Filipinas,abondance
-VP2429,Australia,Premio aventura
-SQ8557,Vietnam,Terrible
-YN4644,Islas Malvinas,Bellota
-GJ5946,Noruega,Breconshire
-HH5023,Republica Dominicana,Bolebroke
-GC3280,Islas Malvinas,Acorazado
-QC1164,España,Generosidad
-NK1201,Ecuador,Castillo de Bombay
-VH2584,Ecuador,Boreas
-YB1434,Belgica,Boyne
-QC1164,España,Generosidad
-MZ9845,Italia,Blakeney
-XL6992,Costa Rica,Bootle
-OC4762,Finlandia,Actividad
-HH5023,Republica Dominicana,Bolebroke
-GS9404,Filipinas,Bramham
-PB7290,Reino Unido,Drogheda
-UZ5981,Cuba,Brissenden
-SQ8557,Vietnam,Terrible
-AI2283,Reino Unido,blackwall
-VC7492,Singapur,Abeille
-XB6912,Argentina,Dovey
-VI9753,Nicaragua,drumheller
-PR9667,Noruega,Bendicion
-KC2936,Noruega,Agua Negra
-GO7311,Australia,Ventaja
-II3534,Noruega,bodenham
-VI4743,Canada,Calypso
-MO4425,Filipinas,abondance
-SL2391,Sudafrica,Alarma
-YE6286,Argentina,Castillo de Bowes
-IV2746,Argentina,Blandford
-KC2936,Noruega,Agua Negra
-HE7029,India,Adonis
-AI9121,Jamaica,Bowen
-HI3831,Belgica,Brevdrageren
-OO2266,Qatar,druida
-SG9128,Japon,Avanzar
-QA2495,Nueva Zelanda,Acertif
-OT5458,Mexico,Aconito
-OI4579,Egipto,Gulnare
-XK7318,Argentina,Acacia
-NT2280,Colombia,Premio Dreadnought
-WC8293,Australia,Campanilla
-UH1378,Sudafrica,Albian
 MZ2239,Egipto,Blickling
-GS9404,Filipinas,Bramham
-HE5247,Polonia,Negrita
-NN2774,Tailandia,Drochterland
-WC8293,Australia,Campanilla
-YX2002,Islas Malvinas,Valiente
-WC8293,Australia,Campanilla
-RO9221,Cuba,Descarado
-OM4230,Paraguay,Blyth
-MY3367,Portugal,Zarza
-LF8633,Suiza,Blenheim
-RH8308,Dinamarca,Agrega un
-CI3218,Siria,Agamenon
-MJ4934,Ecuador,Brantingham
-XG4556,Nicaragua,Rubia
-LD3618,Republica Dominicana,Braak
-VI4743,Canada,Calypso
-HV2199,Mexico,acasta
-KC2936,Noruega,Agua Negra
-IW2489,Australia,Eolo
-YW8268,Cuba,britanico
-KH8053,Belgica,Premio Dover
-HE8199,Jamaica,Brampton
-DS0478,Chile,Penelope
-DQ3759,India,Branlebas
-LN8777,Tailandia,Bridlington
-YT2845,Mexico,gitano
-IG9597,Indonesia,Aetna
-VH2584,Ecuador,Boreas
-XG7925,Filipinas,Albemarle
-RV9799,Dinamarca,Blanche
-CE1914,Corea,downham
-YB1434,Belgica,Boyne
-QI7769,Japon,Albanaise
-GF5994,España,Alcantara
-MZ9845,Italia,Blakeney
-PB7290,Reino Unido,Drogheda
-SU8617,Belgica,Trenza
-EE2109,Nueva Zelanda,Premio dragon
-ST8633,Mexico,Aberford
-OM4230,Paraguay,Blyth
-IH6707,Nicaragua,Boston
-MJ4934,Ecuador,Brantingham
-AL8743,Filipinas,Adelaide
-RQ2918,Dinamarca,Libelula
-PZ3477,Nicaragua,Afridi
-RQ2918,Dinamarca,Libelula
-GT9752,España,Albrighton
-XN4914,Peru,Agudo
-GF5994,España,Alcantara
-PZ1913,Nueva Zelanda,Conductor
-DA9671,Suiza,Botha
-PV7666,Austria,Boulogne
-BN3951,Italia,brigandine
-OB9598,Vietnam,Albuera
-DY6365,Irlanda,Dubford
-OI4579,Egipto,Gulnare
-TS8958,Indonesia,Castillo bridgnorth
-SQ8557,Vietnam,Terrible
-XN4914,Peru,Agudo
-UZ5981,Cuba,Brissenden
-ZP4420,Chile,magnolia
-TJ7818,Portugal,Blankney
-WC2925,Costa Rica,briseis
-ZX2922,India,Abbotsham
-EE2109,Nueva Zelanda,Premio dragon
-HH5023,Republica Dominicana,Bolebroke
-MW6341,Tailandia,Albert
-ZP4420,Chile,magnolia
-GT9752,España,Albrighton
-YB8271,Siria,Premio consejos
-PB7290,Reino Unido,Drogheda
-GS9663,Polonia,broadwater
-OC4762,Finlandia,Actividad
+NT2280,Colombia,Premio Dreadnought
+HP3120,Panama,gympie
 MN4984,Japon,Bombay
-RH8308,Dinamarca,Agrega un
-QD4440,Estados Unidos,Abrams Oferta
-EI5834,Polonia,Bourdelais
-DS0478,Chile,Penelope
-IF9396,Portugal,Braave
-WD8846,Noruega,Blake
-WF3051,Singapur,Brereton
-OF1501,Noruega,Blaxton
-DT6703,Finlandia,Britania
-RP8314,Ecuador,brantford
-CV4539,Islas Malvinas,Boreham
-WF3051,Singapur,Brereton
-BN3951,Italia,brigandine
-XH5466,Australia,Frontera
-PK9613,Paraguay,Dromio
-LF8633,Suiza,Blenheim
-PK9613,Paraguay,Dromio
-OO2266,Qatar,druida
-QL4591,Siria,albacora
-EG8528,Brasil,Abrahan
-RQ2918,Dinamarca,Libelula
-VI7863,Chile,Esclava
-UO8744,Paraguay,Brezo
-RJ2733,Estados Unidos,Almirante Devries
-MJ4934,Ecuador,Brantingham
-VI7863,Chile,Esclava
-UJ2611,Islas Malvinas,Bouclier
-AU6167,Argentina,Affleck
-RP8314,Ecuador,brantford
-AU5998,Irlanda,Abigail
-PJ8392,Republica Dominicana,Buenaventura
-MN1612,Italia,Madera negra
-JR2308,Tailandia,britomart
-QD4440,Estados Unidos,Abrams Oferta
-OT5458,Mexico,Aconito
-LR2069,Panama,Brecon
-CV4539,Islas Malvinas,Boreham
-RC8468,Estados Unidos,Borraja
-VT6220,Mexico,Abisinia
-ZX2922,India,Abbotsham
-EI5834,Polonia,Bourdelais
-HI7513,Suiza,Brayford
-GM1638,Islas Malvinas,Afrikander
-IH6707,Nicaragua,Boston
-OF5956,Egipto,Adur
-ST8633,Mexico,Aberford
-HV2199,Mexico,acasta
-ZP4420,Chile,magnolia
-CC4639,Polonia,Energico
-LF8633,Suiza,Blenheim
-YT2845,Mexico,gitano
-IW2489,Australia,Eolo
-SG9128,Japon,Avanzar
-BI5654,Peru,Consejo
-PP3724,Portugal,Alaunia II
-SM2508,Colombia,Castillo bramber
-RQ2918,Dinamarca,Libelula
-KH8053,Belgica,Premio Dover
-EI5834,Polonia,Bourdelais
-HB3228,Singapur,Habil
-PR9667,Noruega,Bendicion
-GC3280,Islas Malvinas,Acorazado
-CC4639,Polonia,Energico
-PZ3477,Nicaragua,Afridi
-ZV9679,Australia,Blean
-DC7834,Qatar,Sable
-YN4644,Islas Malvinas,Bellota
-AM9504,Paraguay,Chaqueta de sport
-HE7029,India,Adonis
-OI4579,Egipto,Gulnare
-CE1914,Corea,downham
-PK9613,Paraguay,Dromio
-KQ3854,Nicaragua,Bravucon
-PV7666,Austria,Boulogne
-VG7905,Tailandia,Brakel
-HV2199,Mexico,acasta
-DV6261,Belgica,Bridgewater
-LN6036,Republica Dominicana,Africaine
-IT1233,Filipinas,Premio brillante
-PV7666,Austria,Boulogne
-LS5992,Costa Rica,Abelardo
-PA1651,Islas Malvinas,Bumerang
-WC2925,Costa Rica,briseis
-HB3228,Singapur,Habil
-VT2032,Austria,Asesor
-OF1501,Noruega,Blaxton
-DV6261,Belgica,Bridgewater
-ST8633,Mexico,Aberford
 EV7485,Qatar,Bravo
-FO3430,India,brearley
-SL2391,Sudafrica,Alarma
-SV9482,Panama,Bleasdale
-VI4743,Canada,Calypso
-RH8308,Dinamarca,Agrega un
-GJ5946,Noruega,Breconshire
-RC8468,Estados Unidos,Borraja
-EB3227,Peru,Bossington
-DS0478,Chile,Penelope
-YB8271,Siria,Premio consejos
-DA9671,Suiza,Botha
-YB1434,Belgica,Boyne
-GS7205,España,Aventuras
-UL8619,India,blencathra
-QC1164,España,Generosidad
-FI2331,Austria,Bolton Castle
-FO3430,India,brearley
-RO9221,Cuba,Descarado
-HK6767,Sudafrica,Bridport
+HE7029,India,Adonis
+WF3051,Singapur,Brereton
+VI9753,Nicaragua,drumheller
+YW8268,Cuba,britanico
+PV6712,Paraguay,Brocklesby
+OH1392,Jamaica,Broadway
+QL4591,Siria,albacora
+PJ5481,Argentina,Abelia
+YE6286,Argentina,Castillo de Bowes
+LV7419,Qatar,Bronington
 HB3228,Singapur,Habil
-ZC6249,Brasil,Pato
-YP3858,Nicaragua,Sumador
-DC7834,Qatar,Sable
-EX4705,Japon,Firme
-VT2032,Austria,Asesor
-XP9141,Jamaica,Adan y Eva
-DK4889,Portugal,Bristol
-YB1434,Belgica,Boyne
-KC2936,Noruega,Agua Negra
-VI4743,Canada,Calypso
-VX5561,Estados Unidos,Abundancia
-YT2845,Mexico,gitano
-LD3618,Republica Dominicana,Braak
-YG2900,Sudafrica,Almirante Farragut
-BN4195,Costa Rica,acheron
-RP8314,Ecuador,brantford
-PJ8392,Republica Dominicana,Buenaventura
-DV6261,Belgica,Bridgewater
-OO2266,Qatar,druida
-BN3951,Italia,brigandine
 UO8744,Paraguay,Brezo
-JD8184,Mexico,Refriega
-JD8184,Mexico,RefriegaFN4513,Qatar,Brinkley
+MO4425,Filipinas,abondance
+MW6341,Tailandia,Albert
+RK2324,Republica Dominicana,Africa
+XL6992,Costa Rica,Bootle
+MU6547,Sudafrica,Eneas
+TS8958,Indonesia,Castillo bridgnorth
 PP3724,Portugal,Alaunia II
+RO9221,Cuba,Descarado
 LS5992,Costa Rica,Abelardo
-DA9671,Suiza,Botha
-NN2774,Tailandia,Drochterland
-QA2495,Nueva Zelanda,Acertif
-FM3163,Finlandia,Albany
-HI7513,Suiza,Brayford
-UH1378,Sudafrica,Albian
-KH8053,Belgica,Premio Dover
-XP9141,Jamaica,Adan y Eva
-RW4421,Suiza,Downley
-NX3376,Egipto,Albatros
-AY3986,Islas Malvinas,Bradfield
-WX5990,Argentina,Bogam
-YP3858,Nicaragua,Sumador
-EG8528,Brasil,Abrahan
-AY3986,Islas Malvinas,Bradfield
-DY6365,Irlanda,Dubford
-MN1612,Italia,Madera negra
-NQ5495,Panama,Brighton
-PB7290,Reino Unido,Drogheda
-PJ3020,Japon,bowmanville
-KQ3854,Nicaragua,Bravucon
-HW2014,Colombia,Sabueso
-RK9162,Argentina,Brigham
-YN4644,Islas Malvinas,Bellota
-AM9504,Paraguay,Chaqueta de sport
-RC8468,Estados Unidos,Borraja
-KY2131,Paraguay,alberni
-GM1638,Islas Malvinas,Afrikander
-HH5023,Republica Dominicana,Bolebroke
-HV2199,Mexico,acasta
-NQ5495,Panama,Brighton
-DQ3759,India,Branlebas
-FU8868,Panama,Alberta
+IV2746,Argentina,Blandford
+PJ8392,Republica Dominicana,Buenaventura
 GO7311,Australia,Ventaja
+HF4402,Austria,Brillante
+VP2429,Australia,Premio aventura
+EI5834,Polonia,Bourdelais
+CE1914,Corea,downham
+PZ3477,Nicaragua,Afridi
+KM2551,Republica Dominicana,Adepto
+WW2485,Portugal,Acanto
+SM2508,Colombia,Castillo bramber
+YC1851,Austria,Bonne Ciudadana
+DG5218,Filipinas,Drury
+ID7819,Panama,As
+MJ4934,Ecuador,Brantingham
+NQ5495,Panama,Brighton
+MN1612,Italia,Madera negra
+DS0478,Chile,Penelope
+BY5212,Colombia,aboukir
+WX5990,Argentina,Bogam
+RV9799,Dinamarca,Blanche
+GS7205,España,Aventuras
+XG4556,Nicaragua,Rubia
+JR2308,Tailandia,britomart
+RK9162,Argentina,Brigham
+CV4539,Islas Malvinas,Boreham
 BI5654,Peru,Consejo
-PJ3020,Japon,bowmanville
-WK4832,Brasil,Brixham
-ON7101,Argentina,Abundante
-OF1501,Noruega,Blaxton
-PP3724,Portugal,Alaunia II
-LA5643,Siria,abergavenny
-IJ4552,Mexico,Bonetta
+IF9396,Portugal,Braave
+NK1201,Ecuador,Castillo de Bombay
 AL1557,Dinamarca,Boadicea
+IX1197,Italia,Boxer
+VH2584,Ecuador,Boreas
+YB3879,Austria,Bolton
+BF7024,Finlandia,Alban
+OM4230,Paraguay,Blyth
+ZP4420,Chile,magnolia
+PM8536,Canada,Abdiel
+ST8633,Mexico,Aberford
+PA1651,Islas Malvinas,Bumerang
+HK6767,Sudafrica,Bridport
+FA3127,Chile,Brandon
+patente_barco,pais,nombre
+BN3951,Italia,brigandine
+QD4440,Estados Unidos,Abrams Oferta
+ED5736,Chile,guysborough
+HB4367,Egipto,Breda
+EF7582,Belgica,Aquiles
+SU8617,Belgica,Trenza
+TR8211,Australia,Brema
