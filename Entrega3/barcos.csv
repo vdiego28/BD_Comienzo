@@ -1,0 +1,893 @@
+id,patente_barco,pais,nombre_barco
+1,DK4889,Bristol,Portugal
+2,QI7769,Albanaise,Japon
+3,RJ2733,Almirante Devries,Estados Unidos
+4,NN8091,Broaderschap,Jamaica
+5,PV7666,Boulogne,Austria
+6,NT2280,Premio Dreadnought,Colombia
+7,UH1378,Albian,Sudafrica
+8,UJ2611,Bouclier,Islas Malvinas
+9,XG7925,Albemarle,Filipinas
+10,FM3163,Albany,Finlandia
+11,AI9121,Bowen,Jamaica
+12,TG8958,Bergantin,España
+13,ZP4420,magnolia,Chile
+14,OI4579,Gulnare,Egipto
+15,NX3376,Albatros,Egipto
+16,GS9404,Bramham,Filipinas
+17,IX1197,Boxer,Italia
+18,GS9663,broadwater,Polonia
+19,IX1197,Boxer,Italia
+20,KM2551,Adepto,Republica Dominicana
+21,SV9482,Bleasdale,Panama
+22,RO9221,Descarado,Cuba
+23,RP8314,brantford,Ecuador
+24,HI3831,Brevdrageren,Belgica
+25,MY3367,Zarza,Portugal
+26,WW2485,Acanto,Portugal
+27,XP9141,Adan y Eva,Jamaica
+28,VT2032,Asesor,Austria
+29,QJ1463,dubbo,Tailandia
+30,OF5460,Boscawen,Chile
+31,OT5458,Aconito,Mexico
+32,UZ5981,Brissenden,Cuba
+33,PJ3020,bowmanville,Japon
+34,KC2936,Agua Negra,Noruega
+35,RK2324,Africa,Republica Dominicana
+36,XK7318,Acacia,Argentina
+37,MU6547,Eneas,Sudafrica
+38,XP9141,Adan y Eva,Jamaica
+39,RA3983,Bonito,Finlandia
+40,NN2774,Drochterland,Tailandia
+41,PJ3020,bowmanville,Japon
+42,UZ5981,Brissenden,Cuba
+43,HB4367,Breda,Egipto
+44,YC1851,Bonne Ciudadana,Austria
+45,TJ7818,Blankney,Portugal
+46,CI3218,Agamenon,Siria
+47,RO9221,Descarado,Cuba
+48,QL4591,albacora,Siria
+49,FS3778,Acteon,Indonesia
+50,LI5894,Driada,Singapur
+51,RP8314,brantford,Ecuador
+52,DG5218,Drury,Filipinas
+53,VW7522,acteon,Australia
+54,AM9504,Chaqueta de sport,Paraguay
+55,PZ1913,Conductor,Nueva Zelanda
+56,UL8619,blencathra,India
+57,VH2584,Boreas,Ecuador
+58,UJ2611,Bouclier,Islas Malvinas
+59,TQ5114,Gurkha,Finlandia
+60,AU5998,Abigail,Irlanda
+61,PJ8392,Buenaventura,Republica Dominicana
+62,QJ6353,Alamein,Peru
+63,DT6703,Britania,Finlandia
+64,II3534,bodenham,Noruega
+65,GC3280,Acorazado,Islas Malvinas
+66,DQ3759,Branlebas,India
+67,FO3430,brearley,India
+68,AU5998,Abigail,Irlanda
+69,HE7029,Adonis,India
+70,HE2921,Brigadier,Dinamarca
+71,GT9752,Albrighton,España
+72,MO4968,Adversario,España
+73,UZ5981,Brissenden,Cuba
+74,MW6341,Albert,Tailandia
+75,TR8211,Brema,Australia
+76,FS3778,Acteon,Indonesia
+77,ON7101,Abundante,Argentina
+78,II3534,bodenham,Noruega
+79,DV6261,Bridgewater,Belgica
+80,PZ3477,Afridi,Nicaragua
+81,DA9671,Botha,Suiza
+82,KQ3854,Bravucon,Nicaragua
+83,PJ5481,Abelia,Argentina
+84,RV9799,Blanche,Dinamarca
+85,OM4230,Blyth,Paraguay
+86,XL6992,Bootle,Costa Rica
+87,HK6767,Bridport,Sudafrica
+88,XB6912,Dovey,Argentina
+89,EE2109,Premio dragon,Nueva Zelanda
+90,LW4637,Alarico,Brasil
+91,DA9671,Botha,Suiza
+92,SM2508,Castillo bramber,Colombia
+93,HK6767,Bridport,Sudafrica
+94,VP2429,Premio aventura,Australia
+95,PZ1913,Conductor,Nueva Zelanda
+96,FE1567,drummondville,Panama
+97,OH1392,Broadway,Jamaica
+98,LX6914,Abercrombie,Qatar
+99,ON7101,Abundante,Argentina
+100,UJ2611,Bouclier,Islas Malvinas
+101,LI5894,Driada,Singapur
+102,FU8868,Alberta,Panama
+103,WW2485,Acanto,Portugal
+104,DY6365,Dubford,Irlanda
+105,RW4421,Downley,Suiza
+106,ID7819,As,Panama
+107,VG7905,Brakel,Tailandia
+108,AU5998,Abigail,Irlanda
+109,HI3831,Brevdrageren,Belgica
+110,AL8743,Adelaide,Filipinas
+111,SL2391,Alarma,Sudafrica
+112,BY5212,aboukir,Colombia
+113,CG7403,Castillo bodiam,Japon
+114,ED5736,guysborough,Chile
+115,RV9799,Blanche,Dinamarca
+116,BB5259,Flor,Brasil
+117,OC4762,Actividad,Finlandia
+118,ZV9679,Blean,Australia
+119,HV2199,acasta,Mexico
+120,WW2485,Acanto,Portugal
+121,ZV8179,brockville,Indonesia
+122,NL7862,Bottisham,Nueva Zelanda
+123,OB9598,Albuera,Vietnam
+124,HI3831,Brevdrageren,Belgica
+125,RH8308,Agrega un,Dinamarca
+126,EI5834,Bourdelais,Polonia
+127,NX3376,Albatros,Egipto
+128,PR9667,Bendicion,Noruega
+129,YN4644,Bellota,Islas Malvinas
+130,YP3858,Sumador,Nicaragua
+131,DY6365,Dubford,Irlanda
+132,VW7522,acteon,Australia
+133,EE2109,Premio dragon,Nueva Zelanda
+134,KY2131,alberni,Paraguay
+135,PA1651,Bumerang,Islas Malvinas
+136,FI2331,Bolton Castle,Austria
+137,OM4230,Blyth,Paraguay
+138,FS3778,Acteon,Indonesia
+139,IX1197,Boxer,Italia
+140,EI5702,Admirable,Italia
+141,MO4968,Adversario,España
+142,GF5994,Alcantara,España
+143,BZ3311,Floracion,Noruega
+144,HF4402,Brillante,Austria
+145,OA5815,Brinton,Islas Malvinas
+146,WF7217,achates,Islas Malvinas
+147,TS8958,Castillo bridgnorth,Indonesia
+148,AI9121,Bowen,Jamaica
+149,RO9221,Descarado,Cuba
+150,EH9187,Aberdeen,Qatar
+151,NT2280,Premio Dreadnought,Colombia
+152,SL2391,Alarma,Sudafrica
+153,RP8314,brantford,Ecuador
+154,XH5466,Frontera,Australia
+155,VR7517,albury,Islas Malvinas
+156,VI4743,Calypso,Canada
+157,CG7403,Castillo bodiam,Japon
+158,TS8958,Castillo bridgnorth,Indonesia
+159,AU5998,Abigail,Irlanda
+160,EV7485,Bravo,Qatar
+161,LV7419,Bronington,Qatar
+162,SV9482,Bleasdale,Panama
+163,QL4591,albacora,Siria
+164,OJ8771,Activo,España
+165,LA5643,abergavenny,Siria
+166,FO3430,brearley,India
+167,HW2014,Sabueso,Colombia
+168,EV7485,Bravo,Qatar
+169,XP9141,Adan y Eva,Jamaica
+170,CE1914,downham,Corea
+171,EV7485,Bravo,Qatar
+172,XK7318,Acacia,Argentina
+173,VW7522,acteon,Australia
+174,LD3618,Braak,Republica Dominicana
+175,HF1544,Alcaston,Jamaica
+176,HH5472,Boulston,Republica Dominicana
+177,MN1612,Madera negra,Italia
+178,QJ1463,dubbo,Tailandia
+179,PR9667,Bendicion,Noruega
+180,EI5834,Bourdelais,Polonia
+181,FE1567,drummondville,Panama
+182,ZC6249,Pato,Brasil
+183,LR2069,Brecon,Panama
+184,HI3831,Brevdrageren,Belgica
+185,IF9396,Braave,Portugal
+186,IX1197,Boxer,Italia
+187,EV7485,Bravo,Qatar
+188,CI3218,Agamenon,Siria
+189,VX5561,Abundancia,Estados Unidos
+190,OF5460,Boscawen,Chile
+191,NT2280,Premio Dreadnought,Colombia
+192,TG8958,Bergantin,España
+193,FM3163,Albany,Finlandia
+194,UE6214,Bonavoila,Ecuador
+195,HH5472,Boulston,Republica Dominicana
+196,OT5458,Aconito,Mexico
+197,GS7205,Aventuras,España
+198,UO8744,Brezo,Paraguay
+199,HH5472,Boulston,Republica Dominicana
+200,OF5956,Adur,Egipto
+201,MU6547,Eneas,Sudafrica
+202,YB3879,Bolton,Austria
+203,UW2735,Achille,Austria
+204,HH5023,Bolebroke,Republica Dominicana
+205,OH1392,Broadway,Jamaica
+206,QI7769,Albanaise,Japon
+207,PV6712,Brocklesby,Paraguay
+208,PZ1913,Conductor,Nueva Zelanda
+209,LD3618,Braak,Republica Dominicana
+210,CG7403,Castillo bodiam,Japon
+211,SL2391,Alarma,Sudafrica
+212,DQ3759,Branlebas,India
+213,WK4832,Brixham,Brasil
+214,AU6167,Affleck,Argentina
+215,EV7485,Bravo,Qatar
+216,CC4639,Energico,Polonia
+217,HB3228,Habil,Singapur
+218,KC2936,Agua Negra,Noruega
+219,UZ5981,Brissenden,Cuba
+220,HE7029,Adonis,India
+221,FU8868,Alberta,Panama
+222,UO8744,Brezo,Paraguay
+223,KY2131,alberni,Paraguay
+224,BF7024,Alban,Finlandia
+225,IT1233,Premio brillante,Filipinas
+226,PM8536,Abdiel,Canada
+227,FU8868,Alberta,Panama
+228,FA3127,Brandon,Chile
+229,DS0478,Penelope,Chile
+230,KH8053,Premio Dover,Belgica
+231,LW4637,Alarico,Brasil
+232,OT5458,Aconito,Mexico
+233,OF5460,Boscawen,Chile
+234,KC2936,Agua Negra,Noruega
+235,LR2069,Brecon,Panama
+236,WX5990,Bogam,Argentina
+237,GJ5946,Breconshire,Noruega
+238,UO8744,Brezo,Paraguay
+239,NX3376,Albatros,Egipto
+240,EB3227,Bossington,Peru
+241,IX1197,Boxer,Italia
+242,YG2900,Almirante Farragut,Sudafrica
+243,DT6703,Britania,Finlandia
+244,MU6547,Eneas,Sudafrica
+245,BF7024,Alban,Finlandia
+246,FO3430,brearley,India
+247,PU5101,aventura Galera,Peru
+248,HB3228,Habil,Singapur
+249,WF3051,Brereton,Singapur
+250,TJ7818,Blankney,Portugal
+251,MZ2239,Blickling,Egipto
+252,RV9799,Blanche,Dinamarca
+253,AM9504,Chaqueta de sport,Paraguay
+254,KQ3854,Bravucon,Nicaragua
+255,LD3618,Braak,Republica Dominicana
+256,LS5992,Abelardo,Costa Rica
+257,YB1434,Boyne,Belgica
+258,OB9598,Albuera,Vietnam
+259,BN3951,brigandine,Italia
+260,FO3430,brearley,India
+261,OJ8771,Activo,España
+262,OE1789,BLAIRMORE,Argentina
+263,WI9449,Bligh,Suiza
+264,AL8743,Adelaide,Filipinas
+265,OO2266,druida,Qatar
+266,IX1197,Boxer,Italia
+267,LA5643,abergavenny,Siria
+268,YT2845,gitano,Mexico
+269,AM9504,Chaqueta de sport,Paraguay
+270,EY2745,Aberfoyle,Japon
+271,PV7666,Boulogne,Austria
+272,KH8053,Premio Dover,Belgica
+273,XG7925,Albemarle,Filipinas
+274,IX1197,Boxer,Italia
+275,FS3778,Acteon,Indonesia
+276,IJ4552,Bonetta,Mexico
+277,OA5815,Brinton,Islas Malvinas
+278,OF5460,Boscawen,Chile
+279,RK9162,Brigham,Argentina
+280,MN4984,Bombay,Japon
+281,VC7492,Abeille,Singapur
+282,QL4591,albacora,Siria
+283,FO3430,brearley,India
+284,NQ5495,Brighton,Panama
+285,RH8308,Agrega un,Dinamarca
+286,UZ5981,Brissenden,Cuba
+287,RY9242,pechiazul,Canada
+288,AU6167,Affleck,Argentina
+289,KM2551,Adepto,Republica Dominicana
+290,LV7419,Bronington,Qatar
+291,MW6341,Albert,Tailandia
+292,QC1164,Generosidad,España
+293,LW6201,Braithwaite,Japon
+294,TJ7818,Blankney,Portugal
+295,AL8743,Adelaide,Filipinas
+296,LX6914,Abercrombie,Qatar
+297,HF4402,Brillante,Austria
+298,VT2032,Asesor,Austria
+299,WC2925,briseis,Costa Rica
+300,RK9162,Brigham,Argentina
+301,YW8268,britanico,Cuba
+302,PR9667,Bendicion,Noruega
+303,PA1651,Bumerang,Islas Malvinas
+304,EE2109,Premio dragon,Nueva Zelanda
+305,VH2584,Boreas,Ecuador
+306,BI5654,Consejo,Peru
+307,OM4230,Blyth,Paraguay
+308,VI4743,Calypso,Canada
+309,IV2746,Blandford,Argentina
+310,BN4195,acheron,Costa Rica
+311,YW8268,britanico,Cuba
+312,JR2308,britomart,Tailandia
+313,RQ2918,Libelula,Dinamarca
+314,OJ8771,Activo,España
+315,VY5330,brenchley,Australia
+316,AI9121,Bowen,Jamaica
+317,PJ5481,Abelia,Argentina
+318,IH6707,Boston,Nicaragua
+319,FE1567,drummondville,Panama
+320,HB3228,Habil,Singapur
+321,LR2069,Brecon,Panama
+322,DV6261,Bridgewater,Belgica
+323,BF7024,Alban,Finlandia
+324,GE9618,Dromedario,Colombia
+325,CC4639,Energico,Polonia
+326,ED5736,guysborough,Chile
+327,DK4889,Bristol,Portugal
+328,GT9752,Albrighton,España
+329,ON7101,Abundante,Argentina
+330,WF7217,achates,Islas Malvinas
+331,ID7819,As,Panama
+332,MW6341,Albert,Tailandia
+333,OJ8771,Activo,España
+334,ZP4420,magnolia,Chile
+335,UL8619,blencathra,India
+336,MO4425,abondance,Filipinas
+337,IG9597,Aetna,Indonesia
+338,TQ5114,Gurkha,Finlandia
+339,SL2391,Alarma,Sudafrica
+340,OT5458,Aconito,Mexico
+341,RC8468,Borraja,Estados Unidos
+342,MZ9845,Blakeney,Italia
+343,GS9663,broadwater,Polonia
+344,UY2987,Continuar,Islas Malvinas
+345,EI5702,Admirable,Italia
+346,OO2266,druida,Qatar
+347,NQ5495,Brighton,Panama
+348,NX3376,Albatros,Egipto
+349,PZ3477,Afridi,Nicaragua
+350,BI5654,Consejo,Peru
+351,WK4832,Brixham,Brasil
+352,NN8091,Broaderschap,Jamaica
+353,FU8868,Alberta,Panama
+354,HP3120,gympie,Panama
+355,TR8211,Brema,Australia
+356,GS9404,Bramham,Filipinas
+357,SL2391,Alarma,Sudafrica
+358,NN8091,Broaderschap,Jamaica
+359,KC2936,Agua Negra,Noruega
+360,OF1501,Blaxton,Noruega
+361,UL8619,blencathra,India
+362,WD8846,Blake,Noruega
+363,ST8633,Aberford,Mexico
+364,YE6286,Castillo de Bowes,Argentina
+365,ON7101,Abundante,Argentina
+366,TG8958,Bergantin,España
+367,MZ9845,Blakeney,Italia
+368,XK7318,Acacia,Argentina
+369,RC8468,Borraja,Estados Unidos
+370,BI5654,Consejo,Peru
+371,OY7209,Bombardear,Reino Unido
+372,EF7582,Aquiles,Belgica
+373,YC1851,Bonne Ciudadana,Austria
+374,PJ8392,Buenaventura,Republica Dominicana
+375,GE9618,Dromedario,Colombia
+376,RV9799,Blanche,Dinamarca
+377,ED5736,guysborough,Chile
+378,AU6167,Affleck,Argentina
+379,MN1612,Madera negra,Italia
+380,DY6365,Dubford,Irlanda
+381,NN2774,Drochterland,Tailandia
+382,MZ9845,Blakeney,Italia
+383,HE8199,Brampton,Jamaica
+384,XL6992,Bootle,Costa Rica
+385,IJ4552,Bonetta,Mexico
+386,SG9128,Avanzar,Japon
+387,OH1392,Broadway,Jamaica
+388,UH6836,Aladdin,Portugal
+389,TO8113,Almirantazgo,Austria
+390,IV2746,Blandford,Argentina
+391,GC3280,Acorazado,Islas Malvinas
+392,OO2266,druida,Qatar
+393,AY3986,Bradfield,Islas Malvinas
+394,CC4639,Energico,Polonia
+395,NP8695,Brock,Filipinas
+396,CE1914,downham,Corea
+397,VI4743,Calypso,Canada
+398,ST8633,Aberford,Mexico
+399,MY3367,Zarza,Portugal
+400,IG9597,Aetna,Indonesia
+401,ST8633,Aberford,Mexico
+402,VI7863,Esclava,Chile
+403,GS7205,Aventuras,España
+404,RP8314,brantford,Ecuador
+405,TS8958,Castillo bridgnorth,Indonesia
+406,MO4425,abondance,Filipinas
+407,VY5330,brenchley,Australia
+408,UO8744,Brezo,Paraguay
+409,DA9671,Botha,Suiza
+410,OR9516,Espada,Singapur
+411,ZV9679,Blean,Australia
+412,ZC6249,Pato,Brasil
+413,HK6767,Bridport,Sudafrica
+414,PA1651,Bumerang,Islas Malvinas
+415,PR9667,Bendicion,Noruega
+416,LX6914,Abercrombie,Qatar
+417,WF7217,achates,Islas Malvinas
+418,EH9187,Aberdeen,Qatar
+419,WK4832,Brixham,Brasil
+420,GT9752,Albrighton,España
+421,FN4513,Brinkley,Qatar
+422,ZX2922,Abbotsham,India
+423,HV2199,acasta,Mexico
+424,OM4230,Blyth,Paraguay
+425,RK2324,Africa,Republica Dominicana
+426,EI5702,Admirable,Italia
+427,VT2032,Asesor,Austria
+428,PM8536,Abdiel,Canada
+429,LF8633,Blenheim,Suiza
+430,FM3163,Albany,Finlandia
+431,UH1378,Albian,Sudafrica
+432,AU5998,Abigail,Irlanda
+433,LW6201,Braithwaite,Japon
+434,PJ5481,Abelia,Argentina
+435,EB3227,Bossington,Peru
+436,RY9242,pechiazul,Canada
+437,HP3120,gympie,Panama
+438,QI7769,Albanaise,Japon
+439,ZV8179,brockville,Indonesia
+440,HF4402,Brillante,Austria
+441,NX3376,Albatros,Egipto
+442,FN4513,Brinkley,Qatar
+443,KH8053,Premio Dover,Belgica
+444,FN4513,Brinkley,Qatar
+445,GF5994,Alcantara,España
+446,PV7666,Boulogne,Austria
+447,EI5834,Bourdelais,Polonia
+448,XK7318,Acacia,Argentina
+449,TS8958,Castillo bridgnorth,Indonesia
+450,AL8743,Adelaide,Filipinas
+451,GC3280,Acorazado,Islas Malvinas
+452,YB1434,Boyne,Belgica
+453,EG8528,Abrahan,Brasil
+454,VW7522,acteon,Australia
+455,IF9396,Braave,Portugal
+456,GT9752,Albrighton,España
+457,BY4314,Resplandor,Suiza
+458,ED5736,guysborough,Chile
+459,UO8744,Brezo,Paraguay
+460,LN8777,Bridlington,Tailandia
+461,YC1851,Bonne Ciudadana,Austria
+462,YP3858,Sumador,Nicaragua
+463,IJ4552,Bonetta,Mexico
+464,NQ5495,Brighton,Panama
+465,RW4421,Downley,Suiza
+466,TS8958,Castillo bridgnorth,Indonesia
+467,HH5472,Boulston,Republica Dominicana
+468,OJ8771,Activo,España
+469,GM1638,Afrikander,Islas Malvinas
+470,II3534,bodenham,Noruega
+471,KM2551,Adepto,Republica Dominicana
+472,LI5894,Driada,Singapur
+473,EY2745,Aberfoyle,Japon
+474,HF4402,Brillante,Austria
+475,OF5460,Boscawen,Chile
+476,WF3051,Brereton,Singapur
+477,OR9516,Espada,Singapur
+478,RK2324,Africa,Republica Dominicana
+479,LA5643,abergavenny,Siria
+480,YG2900,Almirante Farragut,Sudafrica
+481,RO9221,Descarado,Cuba
+482,SL2391,Alarma,Sudafrica
+483,QA2495,Acertif,Nueva Zelanda
+484,KH8053,Premio Dover,Belgica
+485,NN2774,Drochterland,Tailandia
+486,PJ5481,Abelia,Argentina
+487,TS8958,Castillo bridgnorth,Indonesia
+488,MZ9845,Blakeney,Italia
+489,MO4425,abondance,Filipinas
+490,EH9187,Aberdeen,Qatar
+491,VW7522,acteon,Australia
+492,RO9221,Descarado,Cuba
+493,WF7217,achates,Islas Malvinas
+494,HE8199,Brampton,Jamaica
+495,EF7582,Aquiles,Belgica
+496,CC4639,Energico,Polonia
+497,II3534,bodenham,Noruega
+498,TQ5114,Gurkha,Finlandia
+499,YX2002,Valiente,Islas Malvinas
+500,VY5330,brenchley,Australia
+501,EI5702,Admirable,Italia
+502,DG5218,Drury,Filipinas
+503,UH1378,Albian,Sudafrica
+504,OI4579,Gulnare,Egipto
+505,VI4743,Calypso,Canada
+506,PJ8392,Buenaventura,Republica Dominicana
+507,TJ7818,Blankney,Portugal
+508,RQ2918,Libelula,Dinamarca
+509,BI5654,Consejo,Peru
+510,QI7769,Albanaise,Japon
+511,ST8633,Aberford,Mexico
+512,EE2109,Premio dragon,Nueva Zelanda
+513,GS9404,Bramham,Filipinas
+514,ED5736,guysborough,Chile
+515,AU6167,Affleck,Argentina
+516,GT9752,Albrighton,España
+517,GJ5946,Breconshire,Noruega
+518,ZP4420,magnolia,Chile
+519,PK9613,Dromio,Paraguay
+520,TJ7818,Blankney,Portugal
+521,WX5990,Bogam,Argentina
+522,RW4421,Downley,Suiza
+523,EV7485,Bravo,Qatar
+524,UH6836,Aladdin,Portugal
+525,AL8743,Adelaide,Filipinas
+526,IV2746,Blandford,Argentina
+527,YN4644,Bellota,Islas Malvinas
+528,RQ2918,Libelula,Dinamarca
+529,AV9914,Broadley,Costa Rica
+530,ZP4420,magnolia,Chile
+531,EX4705,Firme,Japon
+532,VX5561,Abundancia,Estados Unidos
+533,VI9753,drumheller,Nicaragua
+534,NQ5495,Brighton,Panama
+535,YB1434,Boyne,Belgica
+536,PZ3477,Afridi,Nicaragua
+537,BB5259,Flor,Brasil
+538,LI5894,Driada,Singapur
+539,MO4968,Adversario,España
+540,RJ2733,Almirante Devries,Estados Unidos
+541,UW2735,Achille,Austria
+542,BF7024,Alban,Finlandia
+543,ST8633,Aberford,Mexico
+544,JR2308,britomart,Tailandia
+545,MU6547,Eneas,Sudafrica
+546,GF5994,Alcantara,España
+547,ON7101,Abundante,Argentina
+548,XG4556,Rubia,Nicaragua
+549,WK4832,Brixham,Brasil
+550,YG2900,Almirante Farragut,Sudafrica
+551,ON7101,Abundante,Argentina
+552,NK1201,Castillo de Bombay,Ecuador
+553,PJ3020,bowmanville,Japon
+554,AI2283,blackwall,Reino Unido
+555,QL4591,albacora,Siria
+556,RK2324,Africa,Republica Dominicana
+557,OT5458,Aconito,Mexico
+558,WF3051,Brereton,Singapur
+559,YX2002,Valiente,Islas Malvinas
+560,WC2925,briseis,Costa Rica
+561,HF4402,Brillante,Austria
+562,LX6914,Abercrombie,Qatar
+563,VG7905,Brakel,Tailandia
+564,BN4195,acheron,Costa Rica
+565,PJ3020,bowmanville,Japon
+566,NX3376,Albatros,Egipto
+567,MZ9845,Blakeney,Italia
+568,ED5736,guysborough,Chile
+569,HH5023,Bolebroke,Republica Dominicana
+570,XL6992,Bootle,Costa Rica
+571,FN4513,Brinkley,Qatar
+572,ID7819,As,Panama
+573,FN4513,Brinkley,Qatar
+574,UE6214,Bonavoila,Ecuador
+575,DS0478,Penelope,Chile
+576,GT9752,Albrighton,España
+577,UH1378,Albian,Sudafrica
+578,KC2936,Agua Negra,Noruega
+579,PK9613,Dromio,Paraguay
+580,OF5956,Adur,Egipto
+581,XP9141,Adan y Eva,Jamaica
+582,PZ3477,Afridi,Nicaragua
+583,FE1567,drummondville,Panama
+584,LD3618,Braak,Republica Dominicana
+585,WK4832,Brixham,Brasil
+586,HB4367,Breda,Egipto
+587,LF8633,Blenheim,Suiza
+588,TR8211,Brema,Australia
+589,WC2925,briseis,Costa Rica
+590,KQ3854,Bravucon,Nicaragua
+591,QL4591,albacora,Siria
+592,YT2845,gitano,Mexico
+593,MO4425,abondance,Filipinas
+594,VP2429,Premio aventura,Australia
+595,SQ8557,Terrible,Vietnam
+596,YN4644,Bellota,Islas Malvinas
+597,GJ5946,Breconshire,Noruega
+598,HH5023,Bolebroke,Republica Dominicana
+599,GC3280,Acorazado,Islas Malvinas
+600,QC1164,Generosidad,España
+601,NK1201,Castillo de Bombay,Ecuador
+602,VH2584,Boreas,Ecuador
+603,YB1434,Boyne,Belgica
+604,QC1164,Generosidad,España
+605,MZ9845,Blakeney,Italia
+606,XL6992,Bootle,Costa Rica
+607,OC4762,Actividad,Finlandia
+608,HH5023,Bolebroke,Republica Dominicana
+609,GS9404,Bramham,Filipinas
+610,PB7290,Drogheda,Reino Unido
+611,UZ5981,Brissenden,Cuba
+612,SQ8557,Terrible,Vietnam
+613,AI2283,blackwall,Reino Unido
+614,VC7492,Abeille,Singapur
+615,XB6912,Dovey,Argentina
+616,VI9753,drumheller,Nicaragua
+617,PR9667,Bendicion,Noruega
+618,KC2936,Agua Negra,Noruega
+619,GO7311,Ventaja,Australia
+620,II3534,bodenham,Noruega
+621,VI4743,Calypso,Canada
+622,MO4425,abondance,Filipinas
+623,SL2391,Alarma,Sudafrica
+624,YE6286,Castillo de Bowes,Argentina
+625,IV2746,Blandford,Argentina
+626,KC2936,Agua Negra,Noruega
+627,HE7029,Adonis,India
+628,AI9121,Bowen,Jamaica
+629,HI3831,Brevdrageren,Belgica
+630,OO2266,druida,Qatar
+631,SG9128,Avanzar,Japon
+632,QA2495,Acertif,Nueva Zelanda
+633,OT5458,Aconito,Mexico
+634,OI4579,Gulnare,Egipto
+635,XK7318,Acacia,Argentina
+636,NT2280,Premio Dreadnought,Colombia
+637,WC8293,Campanilla,Australia
+638,UH1378,Albian,Sudafrica
+639,MZ2239,Blickling,Egipto
+640,GS9404,Bramham,Filipinas
+641,HE5247,Negrita,Polonia
+642,NN2774,Drochterland,Tailandia
+643,WC8293,Campanilla,Australia
+644,YX2002,Valiente,Islas Malvinas
+645,WC8293,Campanilla,Australia
+646,RO9221,Descarado,Cuba
+647,OM4230,Blyth,Paraguay
+648,MY3367,Zarza,Portugal
+649,LF8633,Blenheim,Suiza
+650,RH8308,Agrega un,Dinamarca
+651,CI3218,Agamenon,Siria
+652,MJ4934,Brantingham,Ecuador
+653,XG4556,Rubia,Nicaragua
+654,LD3618,Braak,Republica Dominicana
+655,VI4743,Calypso,Canada
+656,HV2199,acasta,Mexico
+657,KC2936,Agua Negra,Noruega
+658,IW2489,Eolo,Australia
+659,YW8268,britanico,Cuba
+660,KH8053,Premio Dover,Belgica
+661,HE8199,Brampton,Jamaica
+662,DS0478,Penelope,Chile
+663,DQ3759,Branlebas,India
+664,LN8777,Bridlington,Tailandia
+665,YT2845,gitano,Mexico
+666,IG9597,Aetna,Indonesia
+667,VH2584,Boreas,Ecuador
+668,XG7925,Albemarle,Filipinas
+669,RV9799,Blanche,Dinamarca
+670,CE1914,downham,Corea
+671,YB1434,Boyne,Belgica
+672,QI7769,Albanaise,Japon
+673,GF5994,Alcantara,España
+674,MZ9845,Blakeney,Italia
+675,PB7290,Drogheda,Reino Unido
+676,SU8617,Trenza,Belgica
+677,EE2109,Premio dragon,Nueva Zelanda
+678,ST8633,Aberford,Mexico
+679,OM4230,Blyth,Paraguay
+680,IH6707,Boston,Nicaragua
+681,MJ4934,Brantingham,Ecuador
+682,AL8743,Adelaide,Filipinas
+683,RQ2918,Libelula,Dinamarca
+684,PZ3477,Afridi,Nicaragua
+685,RQ2918,Libelula,Dinamarca
+686,GT9752,Albrighton,España
+687,XN4914,Agudo,Peru
+688,GF5994,Alcantara,España
+689,PZ1913,Conductor,Nueva Zelanda
+690,DA9671,Botha,Suiza
+691,PV7666,Boulogne,Austria
+692,BN3951,brigandine,Italia
+693,OB9598,Albuera,Vietnam
+694,DY6365,Dubford,Irlanda
+695,OI4579,Gulnare,Egipto
+696,TS8958,Castillo bridgnorth,Indonesia
+697,SQ8557,Terrible,Vietnam
+698,XN4914,Agudo,Peru
+699,UZ5981,Brissenden,Cuba
+700,ZP4420,magnolia,Chile
+701,TJ7818,Blankney,Portugal
+702,WC2925,briseis,Costa Rica
+703,ZX2922,Abbotsham,India
+704,EE2109,Premio dragon,Nueva Zelanda
+705,HH5023,Bolebroke,Republica Dominicana
+706,MW6341,Albert,Tailandia
+707,ZP4420,magnolia,Chile
+708,GT9752,Albrighton,España
+709,YB8271,Premio consejos,Siria
+710,PB7290,Drogheda,Reino Unido
+711,GS9663,broadwater,Polonia
+712,OC4762,Actividad,Finlandia
+713,MN4984,Bombay,Japon
+714,RH8308,Agrega un,Dinamarca
+715,QD4440,Abrams Oferta,Estados Unidos
+716,EI5834,Bourdelais,Polonia
+717,DS0478,Penelope,Chile
+718,IF9396,Braave,Portugal
+719,WD8846,Blake,Noruega
+720,WF3051,Brereton,Singapur
+721,OF1501,Blaxton,Noruega
+722,DT6703,Britania,Finlandia
+723,RP8314,brantford,Ecuador
+724,CV4539,Boreham,Islas Malvinas
+725,WF3051,Brereton,Singapur
+726,BN3951,brigandine,Italia
+727,XH5466,Frontera,Australia
+728,PK9613,Dromio,Paraguay
+729,LF8633,Blenheim,Suiza
+730,PK9613,Dromio,Paraguay
+731,OO2266,druida,Qatar
+732,QL4591,albacora,Siria
+733,EG8528,Abrahan,Brasil
+734,RQ2918,Libelula,Dinamarca
+735,VI7863,Esclava,Chile
+736,UO8744,Brezo,Paraguay
+737,RJ2733,Almirante Devries,Estados Unidos
+738,MJ4934,Brantingham,Ecuador
+739,VI7863,Esclava,Chile
+740,UJ2611,Bouclier,Islas Malvinas
+741,AU6167,Affleck,Argentina
+742,RP8314,brantford,Ecuador
+743,AU5998,Abigail,Irlanda
+744,PJ8392,Buenaventura,Republica Dominicana
+745,MN1612,Madera negra,Italia
+746,JR2308,britomart,Tailandia
+747,QD4440,Abrams Oferta,Estados Unidos
+748,OT5458,Aconito,Mexico
+749,LR2069,Brecon,Panama
+750,CV4539,Boreham,Islas Malvinas
+751,RC8468,Borraja,Estados Unidos
+752,VT6220,Abisinia,Mexico
+753,ZX2922,Abbotsham,India
+754,EI5834,Bourdelais,Polonia
+755,HI7513,Brayford,Suiza
+756,GM1638,Afrikander,Islas Malvinas
+757,IH6707,Boston,Nicaragua
+758,OF5956,Adur,Egipto
+759,ST8633,Aberford,Mexico
+760,HV2199,acasta,Mexico
+761,ZP4420,magnolia,Chile
+762,CC4639,Energico,Polonia
+763,LF8633,Blenheim,Suiza
+764,YT2845,gitano,Mexico
+765,IW2489,Eolo,Australia
+766,SG9128,Avanzar,Japon
+767,BI5654,Consejo,Peru
+768,PP3724,Alaunia II,Portugal
+769,SM2508,Castillo bramber,Colombia
+770,RQ2918,Libelula,Dinamarca
+771,KH8053,Premio Dover,Belgica
+772,EI5834,Bourdelais,Polonia
+773,HB3228,Habil,Singapur
+774,PR9667,Bendicion,Noruega
+775,GC3280,Acorazado,Islas Malvinas
+776,CC4639,Energico,Polonia
+777,PZ3477,Afridi,Nicaragua
+778,ZV9679,Blean,Australia
+779,DC7834,Sable,Qatar
+780,YN4644,Bellota,Islas Malvinas
+781,AM9504,Chaqueta de sport,Paraguay
+782,HE7029,Adonis,India
+783,OI4579,Gulnare,Egipto
+784,CE1914,downham,Corea
+785,PK9613,Dromio,Paraguay
+786,KQ3854,Bravucon,Nicaragua
+787,PV7666,Boulogne,Austria
+788,VG7905,Brakel,Tailandia
+789,HV2199,acasta,Mexico
+790,DV6261,Bridgewater,Belgica
+791,LN6036,Africaine,Republica Dominicana
+792,IT1233,Premio brillante,Filipinas
+793,PV7666,Boulogne,Austria
+794,LS5992,Abelardo,Costa Rica
+795,PA1651,Bumerang,Islas Malvinas
+796,WC2925,briseis,Costa Rica
+797,HB3228,Habil,Singapur
+798,VT2032,Asesor,Austria
+799,OF1501,Blaxton,Noruega
+800,DV6261,Bridgewater,Belgica
+801,ST8633,Aberford,Mexico
+802,EV7485,Bravo,Qatar
+803,FO3430,brearley,India
+804,SL2391,Alarma,Sudafrica
+805,SV9482,Bleasdale,Panama
+806,VI4743,Calypso,Canada
+807,RH8308,Agrega un,Dinamarca
+808,GJ5946,Breconshire,Noruega
+809,RC8468,Borraja,Estados Unidos
+810,EB3227,Bossington,Peru
+811,DS0478,Penelope,Chile
+812,YB8271,Premio consejos,Siria
+813,DA9671,Botha,Suiza
+814,YB1434,Boyne,Belgica
+815,GS7205,Aventuras,España
+816,UL8619,blencathra,India
+817,QC1164,Generosidad,España
+818,FI2331,Bolton Castle,Austria
+819,FO3430,brearley,India
+820,RO9221,Descarado,Cuba
+821,HK6767,Bridport,Sudafrica
+822,HB3228,Habil,Singapur
+823,ZC6249,Pato,Brasil
+824,YP3858,Sumador,Nicaragua
+825,DC7834,Sable,Qatar
+826,EX4705,Firme,Japon
+827,VT2032,Asesor,Austria
+828,XP9141,Adan y Eva,Jamaica
+829,DK4889,Bristol,Portugal
+830,YB1434,Boyne,Belgica
+831,KC2936,Agua Negra,Noruega
+832,VI4743,Calypso,Canada
+833,VX5561,Abundancia,Estados Unidos
+834,YT2845,gitano,Mexico
+835,LD3618,Braak,Republica Dominicana
+836,YG2900,Almirante Farragut,Sudafrica
+837,BN4195,acheron,Costa Rica
+838,RP8314,brantford,Ecuador
+839,PJ8392,Buenaventura,Republica Dominicana
+840,DV6261,Bridgewater,Belgica
+841,OO2266,druida,Qatar
+842,BN3951,brigandine,Italia
+843,UO8744,Brezo,Paraguay
+844,JD8184,Refriega,Mexico
+845,QJ6353,Alamein,Peru
+846,FN4513,Brinkley,Qatar
+847,PP3724,Alaunia II,Portugal
+848,LS5992,Abelardo,Costa Rica
+849,DA9671,Botha,Suiza
+850,NN2774,Drochterland,Tailandia
+851,QA2495,Acertif,Nueva Zelanda
+852,FM3163,Albany,Finlandia
+853,HI7513,Brayford,Suiza
+854,UH1378,Albian,Sudafrica
+855,KH8053,Premio Dover,Belgica
+856,XP9141,Adan y Eva,Jamaica
+857,RW4421,Downley,Suiza
+858,NX3376,Albatros,Egipto
+859,AY3986,Bradfield,Islas Malvinas
+860,WX5990,Bogam,Argentina
+861,YP3858,Sumador,Nicaragua
+862,EG8528,Abrahan,Brasil
+863,AY3986,Bradfield,Islas Malvinas
+864,DY6365,Dubford,Irlanda
+865,MN1612,Madera negra,Italia
+866,NQ5495,Brighton,Panama
+867,PB7290,Drogheda,Reino Unido
+868,PJ3020,bowmanville,Japon
+869,KQ3854,Bravucon,Nicaragua
+870,HW2014,Sabueso,Colombia
+871,RK9162,Brigham,Argentina
+872,YN4644,Bellota,Islas Malvinas
+873,AM9504,Chaqueta de sport,Paraguay
+874,RC8468,Borraja,Estados Unidos
+875,KY2131,alberni,Paraguay
+876,GM1638,Afrikander,Islas Malvinas
+877,HH5023,Bolebroke,Republica Dominicana
+878,HV2199,acasta,Mexico
+879,NQ5495,Brighton,Panama
+880,DQ3759,Branlebas,India
+881,FU8868,Alberta,Panama
+882,GO7311,Ventaja,Australia
+883,BI5654,Consejo,Peru
+884,PJ3020,bowmanville,Japon
+885,WK4832,Brixham,Brasil
+886,ON7101,Abundante,Argentina
+887,OF1501,Blaxton,Noruega
+888,PP3724,Alaunia II,Portugal
+889,LA5643,abergavenny,Siria
+890,IJ4552,Bonetta,Mexico
+891,AL1557,Boadicea,Dinamarca
+892,QJ6353,Alamein,Peru

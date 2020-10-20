@@ -1,0 +1,544 @@
+id_permiso,id_instalacion,patente_barco,fecha_atraque,actividad
+1,155,RJ2733,2020-01-30 22:55:13,se debe descargar petroleo
+2,78,PV7666,2019-05-20 15:02:21,se debe descargar petroleo
+3,73,UH1378,2021-06-08 21:31:23,se debe descargar petroleo
+4,172,XG7925,2013-04-29 06:37:44,descarga de cointainers
+5,73,FM3163,2018-08-11 07:41:45,descarga de pescados
+6,205,OI4579,2020-12-09 17:02:32,descarga de cointainers
+7,16,GS9404,2012-04-04 09:16:24,carga de cointainers
+8,5,KM2551,2019-03-22 09:04:08,se debe cargar petroleo
+9,205,HI3831,2017-12-12 00:17:28,carga de cointainers
+10,163,XP9141,2019-05-26 15:25:22,descarga de pescados
+11,151,VT2032,2020-12-01 01:35:11,descarga de pescados
+12,55,OF5460,2011-12-10 04:14:38,descarga de cointainers
+13,5,KC2936,2018-09-27 03:47:38,se debe cargar petroleo
+14,118,RK2324,2010-06-14 12:17:28,se debe cargar petroleo
+15,190,XK7318,2013-08-25 09:17:15,descarga de pescados
+16,98,MU6547,2012-06-09 03:12:41,descarga de cointainers
+17,120,NN2774,2017-01-24 07:16:18,carga de cointainers
+18,12,PJ3020,2016-04-14 22:11:07,se debe cargar petroleo
+19,188,UZ5981,2021-07-28 00:31:39,se debe descargar petroleo
+20,190,HB4367,2019-03-29 03:34:06,se debe cargar petroleo
+21,199,TJ7818,2016-06-30 04:02:02,se debe descargar petroleo
+22,84,CI3218,2021-02-15 14:59:49,se debe cargar petroleo
+23,178,RO9221,2016-04-21 08:32:12,se debe descargar petroleo
+24,142,QL4591,2021-05-06 16:28:39,carga de cointainers
+25,124,FS3778,2015-12-18 02:20:55,carga de cointainers
+26,163,LI5894,2012-07-26 01:54:43,descarga de pescados
+27,12,RP8314,2021-01-02 07:56:35,descarga de cointainers
+28,199,PZ1913,2015-05-12 07:19:14,descarga de cointainers
+29,194,UL8619,2014-12-21 22:21:23,descarga de pescados
+30,24,VH2584,2015-09-16 11:19:53,descarga de cointainers
+31,151,UJ2611,2021-07-16 11:32:07,descarga de pescados
+32,127,TQ5114,2019-09-05 03:05:51,descarga de cointainers
+33,5,AU5998,2021-08-15 00:12:46,descarga de pescados
+34,156,PJ8392,2013-08-26 22:46:16,descarga de pescados
+35,212,II3534,2015-01-11 15:16:01,descarga de pescados
+36,27,GC3280,2017-09-27 05:08:30,descarga de pescados
+37,5,DQ3759,2020-12-16 02:56:08,carga de cointainers
+38,54,HE7029,2010-08-07 14:45:10,se debe cargar petroleo
+39,95,HE2921,2013-09-21 01:34:37,descarga de cointainers
+40,90,GT9752,2021-01-22 01:39:53,se debe descargar petroleo
+41,27,UZ5981,2021-05-23 12:26:50,se debe cargar petroleo
+42,11,MW6341,2012-11-17 07:07:15,se debe cargar petroleo
+43,102,TR8211,2017-10-15 06:29:50,se debe cargar petroleo
+44,154,II3534,2014-12-30 21:51:45,descarga de pescados
+45,85,KQ3854,2013-12-13 17:00:07,descarga de pescados
+46,177,PJ5481,2014-07-05 02:56:31,carga de cointainers
+47,24,OM4230,2016-10-09 23:34:24,se debe descargar petroleo
+48,205,XL6992,2017-03-04 04:19:10,descarga de cointainers
+49,78,XB6912,2011-07-18 13:18:04,carga de cointainers
+50,186,EE2109,2020-12-05 22:40:37,carga de cointainers
+51,194,LW4637,2012-05-30 15:32:39,carga de cointainers
+52,198,DA9671,2019-03-21 01:36:28,descarga de pescados
+53,144,SM2508,2011-07-26 01:14:18,descarga de cointainers
+54,84,PZ1913,2010-11-06 16:28:52,descarga de cointainers
+55,59,LX6914,2014-08-30 06:37:19,se debe descargar petroleo
+56,163,ON7101,2012-09-04 22:48:17,descarga de cointainers
+57,102,LI5894,2021-05-24 12:49:41,descarga de pescados
+58,61,FU8868,2012-12-08 00:07:00,descarga de pescados
+59,212,WW2485,2014-03-21 04:58:39,se debe descargar petroleo
+60,90,DY6365,2016-07-15 14:28:05,carga de cointainers
+61,22,ID7819,2021-04-04 03:18:17,descarga de pescados
+62,121,AU5998,2020-08-07 04:30:03,descarga de pescados
+63,11,HI3831,2017-07-27 19:51:48,descarga de cointainers
+64,40,AL8743,2021-06-06 17:52:09,se debe cargar petroleo
+65,155,SL2391,2012-06-27 21:55:54,se debe cargar petroleo
+66,124,BY5212,2021-09-02 15:02:20,se debe descargar petroleo
+67,170,CG7403,2014-06-28 20:35:40,descarga de pescados
+68,118,RV9799,2021-01-03 19:07:54,se debe cargar petroleo
+69,170,BB5259,2012-03-23 16:16:53,descarga de pescados
+70,215,OC4762,2021-06-17 22:08:12,descarga de pescados
+71,205,HV2199,2013-03-25 23:52:46,descarga de cointainers
+72,121,WW2485,2021-02-20 12:14:48,se debe descargar petroleo
+73,73,NL7862,2018-11-02 08:15:23,descarga de pescados
+74,151,OB9598,2013-01-12 10:08:13,se debe cargar petroleo
+75,194,HI3831,2018-01-09 09:07:53,carga de cointainers
+76,23,EI5834,2019-11-25 23:29:58,se debe descargar petroleo
+77,194,YN4644,2021-07-28 01:06:27,descarga de pescados
+78,39,YP3858,2012-11-04 10:40:41,descarga de pescados
+79,150,VW7522,2015-09-21 08:29:50,descarga de pescados
+80,20,EE2109,2013-08-12 00:41:31,carga de cointainers
+81,162,KY2131,2020-10-16 09:14:59,descarga de cointainers
+82,185,PA1651,2011-07-03 03:35:09,descarga de pescados
+83,90,OM4230,2011-08-28 05:25:04,se debe cargar petroleo
+84,162,MO4968,2018-12-22 18:00:59,descarga de pescados
+85,188,GF5994,2019-01-05 19:11:37,se debe descargar petroleo
+86,120,BZ3311,2020-07-10 20:56:26,descarga de cointainers
+87,64,WF7217,2021-04-05 12:45:43,descarga de cointainers
+88,78,TS8958,2010-11-08 16:33:42,descarga de pescados
+89,148,NT2280,2021-01-21 15:59:22,se debe cargar petroleo
+90,3,RP8314,2021-08-07 07:28:27,descarga de cointainers
+91,204,XH5466,2021-06-29 12:15:27,descarga de cointainers
+92,22,VR7517,2021-03-19 17:04:57,se debe descargar petroleo
+93,147,VI4743,2013-07-29 17:08:33,descarga de pescados
+94,148,CG7403,2018-07-08 22:02:32,descarga de pescados
+95,23,TS8958,2021-06-24 13:09:23,descarga de pescados
+96,177,AU5998,2020-03-10 11:36:11,descarga de pescados
+97,119,EV7485,2021-06-13 13:10:02,se debe cargar petroleo
+98,89,LV7419,2013-02-02 03:29:01,se debe descargar petroleo
+99,153,SV9482,2016-05-27 19:07:36,descarga de pescados
+100,22,OJ8771,2020-11-25 00:18:10,se debe descargar petroleo
+101,20,FO3430,2014-07-27 12:41:09,descarga de pescados
+102,151,HW2014,2011-06-29 08:38:14,descarga de pescados
+103,123,EV7485,2020-11-07 06:33:19,se debe cargar petroleo
+104,42,CE1914,2020-11-04 12:02:39,se debe descargar petroleo
+105,17,EV7485,2017-03-21 21:44:15,se debe descargar petroleo
+106,120,XK7318,2011-03-06 16:50:45,descarga de pescados
+107,132,HH5472,2021-04-20 14:54:53,descarga de pescados
+108,102,MN1612,2020-09-14 12:17:58,descarga de pescados
+109,178,QJ1463,2017-09-22 14:26:16,se debe descargar petroleo
+110,160,PR9667,2016-10-21 01:38:25,carga de cointainers
+111,193,EI5834,2010-05-11 22:19:11,se debe cargar petroleo
+112,188,ZC6249,2020-11-13 12:28:45,se debe cargar petroleo
+113,59,LR2069,2021-02-25 23:34:30,se debe descargar petroleo
+114,102,HI3831,2020-10-19 02:27:55,carga de cointainers
+115,102,IF9396,2020-08-19 13:30:38,se debe descargar petroleo
+116,86,EV7485,2021-02-23 05:12:12,se debe descargar petroleo
+117,145,CI3218,2021-01-18 22:09:01,se debe descargar petroleo
+118,192,OF5460,2016-04-27 13:08:05,carga de cointainers
+119,173,TG8958,2014-11-09 20:45:05,descarga de pescados
+120,103,FM3163,2011-08-08 03:47:36,descarga de pescados
+121,127,OT5458,2012-08-11 18:46:13,descarga de cointainers
+122,156,GS7205,2013-08-21 00:14:12,descarga de pescados
+123,90,HH5472,2011-11-13 17:48:15,descarga de pescados
+124,92,MU6547,2021-02-14 12:26:47,carga de cointainers
+125,19,YB3879,2010-06-02 12:56:51,se debe descargar petroleo
+126,188,HH5023,2020-12-26 16:37:46,carga de cointainers
+127,24,QI7769,2015-04-29 08:42:43,se debe cargar petroleo
+128,150,PV6712,2021-02-08 07:00:31,se debe cargar petroleo
+129,161,LD3618,2011-11-12 11:19:25,se debe cargar petroleo
+130,151,CG7403,2020-02-26 05:46:15,descarga de pescados
+131,14,SL2391,2021-07-20 08:58:56,se debe cargar petroleo
+132,151,WK4832,2012-06-27 15:20:50,se debe descargar petroleo
+133,65,AU6167,2014-01-04 23:22:27,carga de cointainers
+134,27,CC4639,2016-03-22 13:59:32,descarga de pescados
+135,149,HB3228,2011-07-27 23:45:41,se debe cargar petroleo
+136,85,KC2936,2021-05-14 15:32:18,se debe descargar petroleo
+137,207,UZ5981,2011-01-09 02:43:25,se debe cargar petroleo
+138,68,HE7029,2020-03-18 10:24:46,se debe cargar petroleo
+139,156,FU8868,2019-11-11 14:41:34,descarga de pescados
+140,89,UO8744,2016-11-14 03:19:27,descarga de pescados
+141,145,KY2131,2017-12-04 23:56:11,descarga de cointainers
+142,215,PM8536,2016-08-20 23:18:56,descarga de pescados
+143,54,FA3127,2011-11-29 07:23:58,se debe cargar petroleo
+144,55,DS0478,2015-06-25 19:46:24,carga de cointainers
+145,28,LW4637,2010-03-11 00:26:24,descarga de cointainers
+146,145,OT5458,2015-08-09 18:41:46,carga de cointainers
+147,71,KC2936,2012-03-05 16:44:00,se debe cargar petroleo
+148,188,WX5990,2021-07-04 20:42:59,carga de cointainers
+149,115,GJ5946,2020-02-09 14:53:37,carga de cointainers
+150,156,UO8744,2021-05-30 22:59:28,descarga de pescados
+151,151,NX3376,2014-12-10 12:58:57,carga de cointainers
+152,129,YG2900,2018-06-12 17:19:21,descarga de cointainers
+153,97,DT6703,2015-05-27 07:02:54,se debe cargar petroleo
+154,199,MU6547,2013-06-18 20:23:35,carga de cointainers
+155,0,FO3430,2012-04-03 07:33:44,descarga de pescados
+156,64,PU5101,2013-08-22 02:07:11,descarga de pescados
+157,52,HB3228,2017-08-02 17:21:11,se debe descargar petroleo
+158,65,TJ7818,2015-09-11 20:36:48,se debe cargar petroleo
+159,11,MZ2239,2018-04-14 00:36:45,se debe cargar petroleo
+160,102,AM9504,2013-09-03 07:39:14,descarga de cointainers
+161,37,LS5992,2020-11-01 17:45:43,descarga de pescados
+162,193,OB9598,2017-10-24 23:02:26,se debe cargar petroleo
+163,11,BN3951,2020-10-21 05:15:48,carga de cointainers
+164,3,FO3430,2016-08-21 06:55:26,descarga de pescados
+165,61,OJ8771,2018-03-05 03:05:07,se debe descargar petroleo
+166,208,OE1789,2010-06-03 14:38:40,carga de cointainers
+167,150,OO2266,2012-05-14 11:21:05,descarga de pescados
+168,145,IX1197,2016-04-01 06:49:02,descarga de pescados
+169,206,PV7666,2017-08-04 08:48:24,se debe cargar petroleo
+170,81,KH8053,2020-10-23 11:37:53,descarga de pescados
+171,68,XG7925,2021-06-25 07:28:16,carga de cointainers
+172,21,IX1197,2014-10-02 20:18:54,descarga de pescados
+173,24,RK9162,2020-10-16 15:36:57,descarga de pescados
+174,16,MN4984,2014-06-06 11:02:55,se debe descargar petroleo
+175,102,NQ5495,2021-06-11 09:49:42,se debe descargar petroleo
+176,178,UZ5981,2020-04-01 06:20:10,se debe descargar petroleo
+177,211,RY9242,2012-10-08 09:49:15,se debe descargar petroleo
+178,19,AU6167,2014-11-28 14:41:08,descarga de cointainers
+179,125,KM2551,2010-12-22 18:00:49,se debe cargar petroleo
+180,68,MW6341,2019-12-31 23:27:42,se debe descargar petroleo
+181,155,AL8743,2021-05-13 09:06:10,se debe cargar petroleo
+182,24,LX6914,2018-06-24 22:50:11,se debe cargar petroleo
+183,16,HF4402,2011-03-25 10:22:20,descarga de cointainers
+184,210,VT2032,2017-04-23 18:57:02,descarga de pescados
+185,154,WC2925,2010-12-08 13:49:10,carga de cointainers
+186,142,RK9162,2017-04-16 11:20:17,descarga de pescados
+187,71,YW8268,2020-12-26 05:00:40,descarga de cointainers
+188,196,VH2584,2020-06-16 23:27:55,carga de cointainers
+189,19,BI5654,2020-10-11 18:15:20,descarga de cointainers
+190,19,JR2308,2010-02-09 11:36:53,descarga de pescados
+191,151,RQ2918,2020-11-20 00:46:32,descarga de pescados
+192,40,OJ8771,2015-08-03 08:03:41,se debe descargar petroleo
+193,173,VY5330,2012-08-27 04:08:27,descarga de pescados
+194,115,FE1567,2014-05-29 09:53:21,descarga de cointainers
+195,28,LR2069,2015-01-26 13:09:04,se debe cargar petroleo
+196,85,BF7024,2012-07-04 22:56:10,descarga de pescados
+197,156,GE9618,2015-09-26 17:21:30,se debe descargar petroleo
+198,193,DK4889,2016-12-06 02:47:30,carga de cointainers
+199,208,GT9752,2020-09-21 04:29:46,se debe descargar petroleo
+200,205,WF7217,2017-11-13 10:30:03,descarga de cointainers
+201,178,UL8619,2021-08-28 00:32:31,descarga de pescados
+202,12,IG9597,2012-05-12 02:19:07,descarga de pescados
+203,19,SL2391,2020-11-11 00:02:58,se debe cargar petroleo
+204,147,RC8468,2011-09-17 17:23:25,descarga de pescados
+205,19,MZ9845,2014-04-26 19:41:22,descarga de pescados
+206,206,GS9663,2020-11-13 02:05:05,descarga de cointainers
+207,192,EI5702,2013-03-02 01:30:23,se debe descargar petroleo
+208,24,OO2266,2021-04-13 16:19:39,descarga de pescados
+209,80,NQ5495,2019-05-11 10:25:59,se debe cargar petroleo
+210,20,NX3376,2021-06-24 03:33:47,descarga de cointainers
+211,173,PZ3477,2012-08-16 13:42:32,carga de cointainers
+212,24,WK4832,2015-07-12 18:05:30,se debe cargar petroleo
+213,96,HP3120,2020-04-07 03:41:53,se debe descargar petroleo
+214,115,SL2391,2020-11-18 00:28:16,se debe descargar petroleo
+215,162,OF1501,2019-04-21 23:47:33,descarga de pescados
+216,215,UL8619,2017-06-25 06:43:17,descarga de pescados
+217,178,YE6286,2017-11-28 08:44:18,descarga de pescados
+218,64,ON7101,2020-12-01 10:03:20,descarga de cointainers
+219,125,XK7318,2019-06-24 20:18:16,descarga de pescados
+220,211,RC8468,2020-03-06 04:46:32,descarga de pescados
+221,1,BI5654,2015-01-26 01:46:05,carga de cointainers
+222,90,OY7209,2018-04-08 17:00:41,carga de cointainers
+223,42,YC1851,2017-04-07 19:58:33,descarga de pescados
+224,199,PJ8392,2020-10-20 06:32:42,descarga de pescados
+225,208,GE9618,2019-08-03 19:37:23,se debe descargar petroleo
+226,11,RV9799,2018-10-21 09:11:29,se debe cargar petroleo
+227,68,ED5736,2020-11-19 01:15:38,se debe descargar petroleo
+228,103,AU6167,2015-10-11 19:53:46,descarga de cointainers
+229,65,NN2774,2014-03-25 17:46:04,carga de cointainers
+230,37,MZ9845,2014-08-15 08:57:26,descarga de pescados
+231,207,SG9128,2020-12-10 10:47:40,descarga de cointainers
+232,118,OH1392,2016-12-25 01:04:05,se debe descargar petroleo
+233,145,IV2746,2013-08-18 23:22:03,se debe descargar petroleo
+234,125,GC3280,2021-06-02 05:22:15,descarga de pescados
+235,40,OO2266,2021-01-26 17:30:16,descarga de pescados
+236,118,AY3986,2021-02-14 15:48:52,se debe cargar petroleo
+237,17,CC4639,2019-02-25 02:17:31,descarga de pescados
+238,144,CE1914,2012-02-28 00:06:12,se debe cargar petroleo
+239,92,ST8633,2012-08-24 04:16:03,descarga de pescados
+240,64,MY3367,2011-06-26 21:11:00,descarga de cointainers
+241,138,IG9597,2012-09-11 23:28:05,descarga de pescados
+242,64,RP8314,2010-08-21 08:11:29,descarga de cointainers
+243,173,MO4425,2017-03-19 13:02:11,descarga de pescados
+244,1,VY5330,2019-05-25 21:14:14,descarga de pescados
+245,115,OR9516,2021-01-15 06:04:58,se debe cargar petroleo
+246,212,ZC6249,2020-01-29 11:13:33,se debe cargar petroleo
+247,156,PA1651,2019-10-19 21:50:09,descarga de pescados
+248,84,WK4832,2020-05-28 18:51:36,se debe descargar petroleo
+249,204,GT9752,2014-05-01 01:12:30,se debe descargar petroleo
+250,37,FN4513,2011-10-08 14:25:18,descarga de cointainers
+251,42,ZX2922,2015-04-06 07:29:48,descarga de pescados
+252,185,HV2199,2021-09-01 04:05:01,carga de cointainers
+253,206,RK2324,2015-12-30 21:05:41,se debe descargar petroleo
+254,84,EI5702,2016-03-11 23:23:05,se debe descargar petroleo
+255,77,VT2032,2020-09-21 06:54:51,descarga de pescados
+256,59,UH1378,2012-05-06 10:41:34,se debe descargar petroleo
+257,125,AU5998,2016-02-23 21:23:23,descarga de pescados
+258,62,QI7769,2013-01-26 10:02:34,se debe descargar petroleo
+259,22,ZV8179,2016-08-09 04:23:49,se debe cargar petroleo
+260,65,NX3376,2015-04-14 10:03:58,descarga de cointainers
+261,26,FN4513,2011-09-12 10:10:14,carga de cointainers
+262,28,KH8053,2015-10-07 03:27:49,descarga de pescados
+263,208,FN4513,2016-05-02 02:38:23,carga de cointainers
+264,42,PV7666,2020-04-15 15:56:43,se debe descargar petroleo
+265,163,EI5834,2021-08-18 22:09:18,se debe cargar petroleo
+266,212,TS8958,2020-11-23 06:42:57,descarga de pescados
+267,23,AL8743,2016-03-12 01:58:28,se debe cargar petroleo
+268,11,GC3280,2018-07-02 04:55:43,descarga de pescados
+269,96,YB1434,2017-09-22 14:40:13,descarga de pescados
+270,192,EG8528,2020-10-11 07:01:08,descarga de pescados
+271,64,VW7522,2014-01-19 20:53:45,descarga de pescados
+272,196,GT9752,2020-12-02 16:55:30,se debe descargar petroleo
+273,27,BY4314,2021-02-03 15:23:39,se debe descargar petroleo
+274,28,ED5736,2013-12-16 01:14:47,se debe cargar petroleo
+275,86,LN8777,2021-01-05 07:58:19,descarga de pescados
+276,55,YC1851,2021-05-31 06:14:19,descarga de pescados
+277,73,YP3858,2012-07-16 10:05:09,descarga de pescados
+278,65,IJ4552,2016-08-25 04:30:33,se debe cargar petroleo
+279,138,HH5472,2021-01-03 22:31:16,descarga de pescados
+280,150,OJ8771,2021-03-11 23:51:30,se debe descargar petroleo
+281,17,II3534,2016-09-27 19:23:17,descarga de pescados
+282,212,KM2551,2020-08-08 21:15:16,se debe descargar petroleo
+283,12,LI5894,2016-11-04 07:30:13,descarga de pescados
+284,192,HF4402,2011-06-20 11:03:39,descarga de cointainers
+285,150,WF3051,2014-04-08 19:59:34,carga de cointainers
+286,103,OR9516,2021-08-05 21:51:28,se debe descargar petroleo
+287,39,LA5643,2020-08-11 01:14:38,se debe descargar petroleo
+288,12,QA2495,2021-07-26 04:38:05,descarga de pescados
+289,172,KH8053,2014-06-10 14:11:17,descarga de pescados
+290,78,PJ5481,2010-09-18 10:35:00,descarga de cointainers
+291,208,TS8958,2020-07-21 11:03:19,descarga de pescados
+292,77,MZ9845,2015-11-01 09:12:02,descarga de pescados
+293,37,MO4425,2020-12-29 23:57:01,descarga de pescados
+294,85,VW7522,2017-01-09 05:21:41,descarga de pescados
+295,84,HE8199,2010-05-25 00:27:38,carga de cointainers
+296,130,EF7582,2021-05-04 06:11:53,carga de cointainers
+297,144,CC4639,2017-12-16 16:16:17,descarga de pescados
+298,124,TQ5114,2012-07-14 20:14:06,descarga de cointainers
+299,62,YX2002,2010-08-12 00:43:27,descarga de pescados
+300,152,VY5330,2021-07-03 19:08:51,descarga de pescados
+301,171,EI5702,2019-01-18 08:54:48,se debe descargar petroleo
+302,204,UH1378,2021-03-09 19:08:47,se debe descargar petroleo
+303,196,VI4743,2017-07-12 23:19:30,descarga de pescados
+304,12,RQ2918,2010-09-08 03:27:04,descarga de pescados
+305,37,BI5654,2021-03-06 19:20:11,carga de cointainers
+306,11,ST8633,2021-04-19 19:44:31,descarga de pescados
+307,150,EE2109,2016-02-10 09:20:01,carga de cointainers
+308,138,ED5736,2015-07-17 08:56:51,se debe cargar petroleo
+309,171,GT9752,2015-12-23 01:56:54,se debe cargar petroleo
+310,193,GJ5946,2016-08-20 18:23:25,descarga de cointainers
+311,37,ZP4420,2016-11-05 12:29:57,descarga de cointainers
+312,163,PK9613,2021-08-05 03:38:20,descarga de cointainers
+313,124,WX5990,2015-01-19 15:00:21,carga de cointainers
+314,141,EV7485,2021-02-09 08:03:13,se debe descargar petroleo
+315,77,AL8743,2019-12-09 12:15:40,se debe cargar petroleo
+316,54,YN4644,2020-07-07 23:20:25,descarga de pescados
+317,193,VX5561,2013-08-21 14:32:39,descarga de pescados
+318,185,NQ5495,2010-08-25 13:51:37,se debe descargar petroleo
+319,81,PZ3477,2014-11-18 00:27:58,descarga de cointainers
+320,64,MO4968,2010-12-08 00:11:01,descarga de pescados
+321,185,UW2735,2014-11-23 06:01:31,descarga de cointainers
+322,153,BF7024,2019-06-19 03:31:57,descarga de pescados
+323,11,ST8633,2020-08-09 15:59:45,descarga de pescados
+324,21,JR2308,2021-03-11 01:03:58,descarga de pescados
+325,208,MU6547,2021-06-29 02:41:47,descarga de cointainers
+326,22,GF5994,2011-01-23 13:47:57,se debe descargar petroleo
+327,205,WK4832,2018-06-29 23:23:23,se debe descargar petroleo
+328,24,ON7101,2010-01-03 23:27:10,carga de cointainers
+329,40,NK1201,2018-09-11 17:56:52,carga de cointainers
+330,115,PJ3020,2015-09-06 21:08:15,se debe descargar petroleo
+331,171,AI2283,2012-05-24 05:36:01,carga de cointainers
+332,2,QL4591,2021-02-26 11:20:21,descarga de cointainers
+333,21,RK2324,2021-04-26 16:54:15,se debe descargar petroleo
+334,5,OT5458,2019-02-23 05:21:21,descarga de cointainers
+335,59,WF3051,2013-04-15 10:58:13,carga de cointainers
+336,200,YX2002,2011-03-03 00:23:24,descarga de pescados
+337,19,WC2925,2012-08-06 21:51:16,descarga de cointainers
+338,80,HF4402,2018-07-24 08:43:11,carga de cointainers
+339,160,VG7905,2021-03-25 15:58:10,descarga de cointainers
+340,185,PJ3020,2021-07-30 18:34:41,se debe cargar petroleo
+341,172,NX3376,2011-01-12 02:41:31,descarga de cointainers
+342,172,FN4513,2014-09-23 08:59:28,descarga de cointainers
+343,20,ID7819,2013-10-22 00:39:10,descarga de pescados
+344,155,FN4513,2020-04-30 03:34:07,descarga de cointainers
+345,165,DS0478,2010-06-05 04:01:28,descarga de cointainers
+346,65,GT9752,2021-01-17 18:19:22,se debe descargar petroleo
+347,85,UH1378,2017-03-12 03:05:10,se debe descargar petroleo
+348,17,KC2936,2021-02-15 06:04:06,se debe cargar petroleo
+349,186,XP9141,2020-11-24 06:26:55,descarga de pescados
+350,14,PZ3477,2012-10-18 12:00:00,descarga de cointainers
+351,151,FE1567,2016-03-26 03:50:07,descarga de cointainers
+352,77,WK4832,2021-05-04 20:03:46,se debe cargar petroleo
+353,59,HB4367,2016-10-05 00:28:21,se debe cargar petroleo
+354,205,KQ3854,2014-12-05 05:31:35,descarga de pescados
+355,147,YT2845,2010-05-19 14:17:18,descarga de pescados
+356,194,VP2429,2021-05-09 14:12:03,descarga de pescados
+357,165,GJ5946,2020-12-09 08:00:33,descarga de cointainers
+358,149,HH5023,2020-06-26 02:36:49,descarga de cointainers
+359,124,GC3280,2010-10-23 14:44:06,descarga de pescados
+360,127,VH2584,2017-11-26 06:22:33,carga de cointainers
+361,27,YB1434,2016-04-01 21:51:51,descarga de pescados
+362,153,MZ9845,2021-04-09 13:05:24,descarga de pescados
+363,127,HH5023,2020-11-26 04:07:42,descarga de cointainers
+364,85,GS9404,2021-02-17 20:47:53,carga de cointainers
+365,96,PB7290,2012-09-08 21:18:11,descarga de pescados
+366,163,UZ5981,2013-11-10 08:06:04,se debe descargar petroleo
+367,39,AI2283,2015-08-17 20:29:39,carga de cointainers
+368,144,XB6912,2012-11-05 09:18:59,carga de cointainers
+369,141,PR9667,2017-10-13 20:27:08,carga de cointainers
+370,198,KC2936,2011-03-24 13:15:12,se debe descargar petroleo
+371,52,VI4743,2020-11-06 08:17:24,descarga de pescados
+372,3,MO4425,2011-11-12 19:45:13,descarga de pescados
+373,17,SL2391,2020-02-15 02:39:38,se debe descargar petroleo
+374,68,YE6286,2011-11-11 12:25:48,descarga de pescados
+375,153,IV2746,2015-11-23 14:07:02,se debe cargar petroleo
+376,27,HE7029,2012-05-16 20:10:25,se debe descargar petroleo
+377,185,AI9121,2021-02-22 12:24:38,se debe cargar petroleo
+378,46,OO2266,2014-12-29 01:14:48,descarga de pescados
+379,52,SG9128,2019-09-18 15:32:57,descarga de cointainers
+380,11,XK7318,2016-02-24 06:52:22,descarga de pescados
+381,194,NT2280,2019-09-05 14:26:48,se debe descargar petroleo
+382,193,WC8293,2021-04-10 01:14:24,descarga de pescados
+383,59,GS9404,2017-04-11 01:34:11,descarga de cointainers
+384,161,NN2774,2016-02-17 05:29:33,descarga de cointainers
+385,192,WC8293,2021-07-07 04:10:59,descarga de pescados
+386,175,YX2002,2010-04-09 03:10:59,descarga de pescados
+387,37,RO9221,2017-02-07 07:58:45,se debe cargar petroleo
+388,207,RH8308,2011-01-20 11:09:52,descarga de cointainers
+389,40,KC2936,2014-11-06 13:03:28,se debe descargar petroleo
+390,161,IW2489,2019-06-02 04:32:37,descarga de pescados
+391,11,KH8053,2018-05-09 13:00:52,descarga de pescados
+392,55,DS0478,2010-10-30 22:46:07,carga de cointainers
+393,120,LN8777,2021-07-19 09:29:37,descarga de pescados
+394,27,IG9597,2020-09-11 01:25:05,descarga de pescados
+395,162,XG7925,2016-05-31 20:40:27,carga de cointainers
+396,102,RV9799,2016-03-11 12:46:57,se debe descargar petroleo
+397,171,YB1434,2021-04-30 19:32:56,descarga de pescados
+398,200,QI7769,2013-08-08 13:53:47,se debe cargar petroleo
+399,28,GF5994,2013-06-01 04:25:58,se debe descargar petroleo
+400,107,PB7290,2021-08-21 12:59:05,descarga de pescados
+401,177,SU8617,2020-01-27 12:15:10,se debe cargar petroleo
+402,77,ST8633,2011-03-16 06:25:08,descarga de pescados
+403,124,OM4230,2018-02-13 21:11:18,se debe cargar petroleo
+404,39,IH6707,2016-03-05 14:04:19,descarga de pescados
+405,171,MJ4934,2018-07-12 02:12:58,descarga de pescados
+406,153,AL8743,2021-08-14 23:55:17,se debe descargar petroleo
+407,198,PZ3477,2017-12-16 11:18:16,descarga de cointainers
+408,138,RQ2918,2012-05-28 04:12:50,descarga de pescados
+409,107,GT9752,2018-10-26 15:00:03,se debe descargar petroleo
+410,95,XN4914,2018-12-17 08:24:34,carga de cointainers
+411,24,GF5994,2021-08-17 21:40:15,se debe descargar petroleo
+412,141,PZ1913,2012-03-02 00:30:27,carga de cointainers
+413,127,DA9671,2017-07-27 00:42:30,descarga de pescados
+414,80,PV7666,2010-08-24 15:22:43,se debe cargar petroleo
+415,85,BN3951,2020-11-06 19:02:59,descarga de cointainers
+416,142,OB9598,2020-04-09 10:55:59,se debe descargar petroleo
+417,142,DY6365,2017-02-15 15:26:49,carga de cointainers
+418,102,OI4579,2015-12-11 19:23:14,descarga de cointainers
+419,55,TS8958,2014-02-23 00:48:07,descarga de pescados
+420,152,ZP4420,2019-09-14 22:39:09,carga de cointainers
+421,120,TJ7818,2021-07-04 22:26:56,se debe cargar petroleo
+422,144,WC2925,2021-08-10 02:53:54,carga de cointainers
+423,211,ZX2922,2017-02-21 11:24:57,descarga de pescados
+424,68,EE2109,2014-02-10 16:41:30,carga de cointainers
+425,21,ZP4420,2020-09-20 07:06:13,descarga de cointainers
+426,175,GT9752,2019-04-03 05:34:34,se debe descargar petroleo
+427,151,PB7290,2011-11-26 15:57:21,descarga de pescados
+428,132,GS9663,2015-01-28 18:16:28,descarga de cointainers
+429,24,OC4762,2021-09-04 00:12:14,descarga de pescados
+430,119,MN4984,2021-08-28 16:30:02,se debe descargar petroleo
+431,119,QD4440,2010-03-17 21:01:08,se debe descargar petroleo
+432,80,DS0478,2011-11-01 03:22:38,descarga de cointainers
+433,28,IF9396,2010-10-15 06:52:13,se debe cargar petroleo
+434,193,WD8846,2010-12-17 02:19:14,descarga de cointainers
+435,78,OF1501,2020-12-31 07:41:33,descarga de pescados
+436,55,DT6703,2012-01-07 22:59:27,se debe descargar petroleo
+437,22,RP8314,2010-10-10 09:18:56,descarga de cointainers
+438,172,WF3051,2020-12-09 13:19:00,carga de cointainers
+439,39,XH5466,2013-04-11 07:27:40,descarga de cointainers
+440,165,PK9613,2021-04-01 23:36:05,descarga de cointainers
+441,114,LF8633,2015-08-13 13:42:43,se debe descargar petroleo
+442,37,OO2266,2011-01-26 20:26:34,descarga de pescados
+443,84,QL4591,2021-07-08 05:07:37,carga de cointainers
+444,215,RQ2918,2016-09-14 19:32:09,descarga de pescados
+445,186,VI7863,2021-07-07 12:44:23,descarga de cointainers
+446,39,UO8744,2011-07-31 23:05:51,descarga de pescados
+447,61,RJ2733,2013-05-02 02:30:12,se debe descargar petroleo
+448,61,MJ4934,2018-01-31 08:22:56,descarga de pescados
+449,86,VI7863,2018-12-29 16:46:27,carga de cointainers
+450,212,AU6167,2021-06-09 18:51:26,carga de cointainers
+451,24,RP8314,2019-07-17 10:34:52,carga de cointainers
+452,89,JR2308,2020-11-11 15:25:27,descarga de pescados
+453,42,QD4440,2014-10-27 04:15:48,se debe descargar petroleo
+454,106,OT5458,2010-11-16 20:32:30,descarga de cointainers
+455,177,VT6220,2011-03-03 21:17:50,descarga de cointainers
+456,144,ZX2922,2011-03-04 02:02:06,descarga de pescados
+457,26,HI7513,2020-11-26 01:50:22,se debe descargar petroleo
+458,141,GM1638,2010-08-24 05:00:58,descarga de pescados
+459,84,IH6707,2021-06-13 22:33:59,descarga de pescados
+460,123,ST8633,2020-07-27 04:01:36,descarga de pescados
+461,54,CC4639,2020-10-22 15:52:56,descarga de pescados
+462,20,LF8633,2020-12-03 11:38:45,se debe descargar petroleo
+463,193,YT2845,2011-03-22 06:00:07,descarga de pescados
+464,62,SG9128,2017-05-19 22:40:51,carga de cointainers
+465,62,PP3724,2017-03-20 18:08:51,se debe cargar petroleo
+466,152,SM2508,2014-08-07 16:57:10,carga de cointainers
+467,80,KH8053,2021-02-05 13:21:00,descarga de pescados
+468,190,PR9667,2021-02-25 14:34:53,descarga de cointainers
+469,177,CC4639,2013-07-28 16:07:22,descarga de pescados
+470,150,PZ3477,2011-02-25 02:10:31,carga de cointainers
+471,153,ZV9679,2020-07-31 19:48:10,se debe descargar petroleo
+472,173,DC7834,2017-04-22 15:49:59,descarga de pescados
+473,77,YN4644,2019-01-01 02:45:04,descarga de pescados
+474,14,AM9504,2015-05-19 04:47:56,descarga de cointainers
+475,199,HE7029,2019-08-16 20:05:07,se debe cargar petroleo
+476,0,OI4579,2020-12-10 21:07:04,carga de cointainers
+477,141,CE1914,2012-05-30 19:26:13,se debe descargar petroleo
+478,165,PK9613,2011-08-05 13:39:31,carga de cointainers
+479,199,KQ3854,2013-06-19 05:05:59,descarga de pescados
+480,77,VG7905,2021-07-18 21:21:36,descarga de cointainers
+481,132,HV2199,2016-12-29 17:00:50,carga de cointainers
+482,17,DV6261,2010-12-15 19:17:21,descarga de pescados
+483,124,IT1233,2019-12-21 22:50:57,descarga de pescados
+484,163,PV7666,2016-08-08 21:12:33,se debe cargar petroleo
+485,160,LS5992,2014-06-08 12:23:31,descarga de pescados
+486,173,PA1651,2014-04-05 11:29:55,descarga de pescados
+487,16,HB3228,2020-12-07 04:22:22,se debe cargar petroleo
+488,89,VT2032,2012-06-08 21:05:11,descarga de pescados
+489,211,OF1501,2021-04-06 00:21:38,descarga de pescados
+490,170,ST8633,2021-05-26 21:00:42,descarga de pescados
+491,121,EV7485,2018-10-11 04:54:28,se debe descargar petroleo
+492,40,FO3430,2019-12-27 20:24:43,descarga de pescados
+493,62,SV9482,2021-04-11 16:01:26,descarga de pescados
+494,21,GJ5946,2017-03-08 17:47:08,carga de cointainers
+495,90,EB3227,2014-07-01 08:53:57,se debe cargar petroleo
+496,23,DS0478,2019-04-29 01:13:30,carga de cointainers
+497,84,DA9671,2013-09-15 21:11:56,descarga de pescados
+498,123,YB1434,2017-03-02 11:32:05,descarga de pescados
+499,132,GS7205,2018-10-08 01:43:35,descarga de pescados
+500,27,UL8619,2013-03-09 14:02:05,descarga de pescados
+501,154,QC1164,2020-11-21 03:49:49,se debe descargar petroleo
+502,59,RO9221,2012-12-20 23:03:27,se debe descargar petroleo
+503,73,HK6767,2017-08-05 05:38:57,se debe cargar petroleo
+504,37,HB3228,2020-10-17 21:47:40,se debe descargar petroleo
+505,156,DC7834,2013-10-17 17:36:32,descarga de pescados
+506,130,EX4705,2010-12-17 10:28:04,se debe cargar petroleo
+507,124,VT2032,2021-04-30 02:43:38,descarga de pescados
+508,212,XP9141,2016-08-17 06:32:12,descarga de pescados
+509,172,DK4889,2020-12-29 02:49:07,descarga de cointainers
+510,80,KC2936,2010-06-15 06:57:36,se debe descargar petroleo
+511,14,YT2845,2021-08-24 16:17:28,descarga de pescados
+512,151,LD3618,2012-01-30 17:41:19,se debe descargar petroleo
+513,193,BN4195,2014-12-27 01:19:40,descarga de cointainers
+514,119,DV6261,2018-07-01 13:26:15,descarga de pescados
+515,86,BN3951,2014-03-13 17:17:39,carga de cointainers
+516,165,UO8744,2013-10-22 04:52:19,descarga de pescados
+517,17,JD8184,2017-08-25 02:24:02,se debe cargar petroleo
+518,20,FN4513,2014-10-06 07:07:24,carga de cointainers
+519,185,PP3724,2018-11-01 23:11:19,se debe cargar petroleo
+520,95,DA9671,2020-12-02 17:01:05,descarga de pescados
+521,37,NN2774,2020-11-09 07:12:28,descarga de cointainers
+522,14,UH1378,2019-08-02 19:14:01,se debe cargar petroleo
+523,193,KH8053,2019-01-17 08:45:59,descarga de pescados
+524,151,XP9141,2012-11-04 17:31:26,descarga de pescados
+525,61,RW4421,2014-07-19 18:11:01,se debe descargar petroleo
+526,80,WX5990,2017-08-13 05:59:37,carga de cointainers
+527,162,YP3858,2021-04-07 19:57:46,descarga de pescados
+528,24,MN1612,2015-01-15 19:06:23,descarga de pescados
+529,78,NQ5495,2021-03-16 14:54:25,se debe descargar petroleo
+530,163,PB7290,2020-08-06 07:17:14,descarga de pescados
+531,124,PJ3020,2021-07-09 01:26:55,se debe cargar petroleo
+532,0,KQ3854,2020-09-17 20:34:36,descarga de pescados
+533,149,HW2014,2017-06-05 17:58:59,descarga de pescados
+534,125,AM9504,2014-03-22 19:05:39,descarga de cointainers
+535,172,KY2131,2013-07-24 00:33:44,carga de cointainers
+536,73,BI5654,2016-12-23 15:19:51,descarga de cointainers
+537,153,PJ3020,2021-07-22 17:00:32,se debe cargar petroleo
+538,185,WK4832,2013-05-26 12:29:53,se debe descargar petroleo
+539,103,ON7101,2021-07-08 01:12:54,carga de cointainers
+540,98,OF1501,2013-09-05 14:23:50,descarga de pescados
+541,149,PP3724,2013-02-04 01:35:43,se debe descargar petroleo
+542,77,AL1557,2015-04-14 00:14:04,descarga de cointainers
+543,61,QJ6353,2013-09-15 03:57:09,se debe descargar petroleo
