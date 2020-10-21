@@ -14,7 +14,7 @@
         <input type="number" name="edad_usuario">
         <br/></br>
         Numero de Pasaporte:
-        <input type="number" name="n_pasaporte_usuario">
+        <input type="text" name="n_pasaporte_usuario">
         <br/></br>
         Nacionalidad:
         <input type="text" name="nacionalidad_usuario">
