@@ -10,6 +10,12 @@ de la ayudantia.
   
   <h1 align="center">Puertos e Instalaciones </h1>
   <p style="text-align:center;">Aquí se podra encontrar información sobre puertos.</p>
+  <br>
+  
+  <form align="center" action="nueva_sesion.php" method="post">
+    <br/><br/>
+    <input type="submit" value="crear sesion">
+  </form>
 
   <br>
 

@@ -28,3 +28,6 @@
             <input type="submit" value="Regresar">
         </form>
     }
+
+</body>
+</html>
