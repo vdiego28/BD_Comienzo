@@ -12,9 +12,9 @@
     $result -> execute();
     $nombres = $result -> fetchAll();
 
-    list($total) = mysql_fetch_row($result);
+    $num_row = mysql_num_rows ($result) :int;
 
-    if ($total==0) { ?>
+    if ($num_row == 0) { ?>
         <form align="center" action="nueva_sesion.php" method="post">
         <p> Lo siento pero no existe usuario con esta contraseña </p>
         <br/><br/>
