@@ -12,7 +12,7 @@
     $result -> execute();
     $nombres = $result -> fetchAll();
 
-    $num_row = mysqli_num_rows ($result);
+    $num_row = $result -> mysqli_num_rows ();
 
     if ($num_row == 0) { ?>
         <form align="center" action="nueva_sesion.php" method="post">
