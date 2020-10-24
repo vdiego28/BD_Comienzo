@@ -14,7 +14,7 @@
 
     list($total) = mysql_fetch_row($result);
 
-    <? if ($total==0) { ?>
+    if ($total==0) {
 
         <p> Lo siento pero no existe usuario con esta contraseña </p>
         <br>
@@ -22,15 +22,15 @@
         <br/><br/>
         <input type="submit" value="Registrarse">
         </form>
-    <? } ?>
+    }
 
-    <? if ($total!=0) { ?>
+    if ($total!=0) {
         <p> Todo en orden, puede ingresar </p>
         <form align="center" action="index.php" method="post">
         <br/></br>
         <input type="submit" value="Ingresar">
         </form>
-    <? } ?>
+    }
 
 </body>
 </html>
