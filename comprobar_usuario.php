@@ -14,23 +14,21 @@
 
     list($total) = mysql_fetch_row($result);
 
-    if ($total==0) {
-
-        <p> Lo siento pero no existe usuario con esta contraseña </p>
-        <br>
+    if ($total==0) { ?>
         <form align="center" action="nueva_sesion.php" method="post">
+        <p> Lo siento pero no existe usuario con esta contraseña </p>
         <br/><br/>
         <input type="submit" value="Registrarse">
         </form>
-    }
+    <?php }
 
-    if ($total!=0) {
-        <p> Todo en orden, puede ingresar </p>
+    if ($total!=0) { ?>
         <form align="center" action="index.php" method="post">
+        <p> Todo en orden, puede ingresar </p>
         <br/></br>
         <input type="submit" value="Ingresar">
         </form>
-    }
+    <?php } ?>
 
 </body>
 </html>
