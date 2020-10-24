@@ -12,9 +12,7 @@
     $result -> execute();
     $nombres = $result -> fetchAll();
 
-    $num_row = pg_num_rows ($result);
-
-    if ($num_row == 0) { ?>
+    if (pg_num_rows($result) == 0) { ?>
         <form align="center" action="nueva_sesion.php" method="post">
         <p> Lo siento pero no existe usuario con esta contraseña </p>
         <br/><br/>
@@ -22,7 +20,7 @@
         </form>
     <?php }
 
-    if ($total!=0) { ?>
+    if (pg_num_rows($result) !=0) { ?>
         <form align="center" action="index.php" method="post">
         <p> Todo en orden, puede ingresar </p>
         <br/></br>
