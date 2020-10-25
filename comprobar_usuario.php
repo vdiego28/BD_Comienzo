@@ -7,7 +7,7 @@
     $nombre = $_POST["nombre_usuario"];
     $contrasena = $_POST["contraseña_usuario"];
 
-    $query = "SELECT nombre FROM Usuarios WHERE nombre = '%nombre%' AND contrasena = '%contrasena%'";
+    $query = "SELECT nombre FROM Usuarios WHERE nombre = '%$nombre%' AND contrasena = '%$contrasena%'";
     $result = $db -> prepare($query);
     $result -> execute();
     $nombres = $result -> fetchAll();
