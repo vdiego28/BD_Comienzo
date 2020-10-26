@@ -11,7 +11,7 @@
     $result = $db -> prepare($query);
     $result -> execute();
     $nombres = $result -> fetchAll();
-    $num_col = pg_num_rows($result)
+    $num_col = pg_num_rows($result);
 
     if ($num_col = 0) { ?>
         <form align="center" action="nueva_sesion.php" method="post">
