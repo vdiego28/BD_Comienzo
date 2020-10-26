@@ -13,7 +13,7 @@
     $query = "SELECT nombre FROM Usuarios WHERE nombre = '%nombre%'";
     $result = $db -> prepare($query);
     $result -> execute();
-    $nombres = $result -> fetchAll();s
+    $nombres = $result -> fetchAll();
 
     list($total) = mysql_fetch_row($result);
     if ($total!=0) or (strlen($contrasena)<1) or (strlen($nacionalidad)<1) or ($edad<1) or (strlen($pasaporte)<1) or () { ?>
