@@ -11,8 +11,9 @@
     $result = $db -> prepare($query);
     $result -> execute();
     $nombres = $result -> fetchAll();
+    list($total) = mysql_fetch_row($result)
 
-    if (pg_num_rows($result) == 0) { ?>
+    if ($total == 0) { ?>
         <form align="center" action="nueva_sesion.php" method="post">
         <p> Lo siento pero no existe usuario con esta contraseña </p>
         <br/><br/>
@@ -20,7 +21,7 @@
         </form>
     <?php }
 
-    if (pg_num_rows($result) !=0) { ?>
+    if ($total !=0) { ?>
         <form align="center" action="index.php" method="post">
         <p> Todo en orden, puede ingresar </p>
         <br/></br>

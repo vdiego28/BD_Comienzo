@@ -13,10 +13,10 @@
     $query = "SELECT nombre FROM Usuarios WHERE nombre = '%nombre%'";
     $result = $db -> prepare($query);
     $result -> execute();
-    $nombres = $result -> fetchAll();
+    $nombres = $result -> fetchAll();s
 
     list($total) = mysql_fetch_row($result);
-    if ($total!=0) or (strlen($contrasena)<1) or (strlen($nacionalidad)<1) or ($edad<1) or (strlen($pasaporte)<1) { ?>
+    if ($total!=0) or (strlen($contrasena)<1) or (strlen($nacionalidad)<1) or ($edad<1) or (strlen($pasaporte)<1) or () { ?>
         <p> Existe un error con sus datos, intente otra vez. </p>
         <form align="center" action="nueva_sesion.php" method="post">
         <br/></br>
