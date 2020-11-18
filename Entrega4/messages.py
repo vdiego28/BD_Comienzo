@@ -26,7 +26,7 @@ def home():
     '''
     Página de inicio
     '''
-    return "<h1>¡Hola!</h1>"
+    return "<h1>¡Hola, estas en el archivo de menssages!</h1>"
 
 
 @app.route("/messages")

@@ -19,7 +19,7 @@ if __name__ == "__main__":
     # Seleccionamos la collección de message
     messages = db.messages
 
-    #Iniciamos la aplicación de flask
+    # Iniciamos la aplicación de flask
     app = Flask(__name__)
 
 
@@ -28,15 +28,25 @@ def home():
     '''
     Página de inicio
     '''
-    return "<h1>¡Hola!</h1>"
+    return "<h1>¡Hola, estas en archivo de busqueda!</h1>"
 
-@app.route("/<str:mid>")
+@app.route("/text-search)
 def search_messages(mid):
     '''
-    Obtiene el message de id entregada
+    Obtiene el contenido de los mensajes
     '''
-    message = list(messages.find({"mid": mid}, {"_id": 0}))
+    recived = {key: request.json[key] for key in MESSAGES_KEYS}
+    maybe = " ".join(recived["maybe"])
+    # guardamos los maybe
+    data = messages.find({"sender": recived["userID"]}, {$text: {$search: maybe}}, {"description.value": 1})
+    # Guardamos los obligatorios
+    for key in recived["required"]:
+        data = data.find({$text: {"$search": f"(\"{key}\""}}, {"description.value": 1})
+    # Sacamos los prohibidos
+    for key in recived["forbidden"]:
+        data = data.find({$text: {"$search": f"(-\"{key}\""}}, {"description.value": 1})
     return json.jsonify(message)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
