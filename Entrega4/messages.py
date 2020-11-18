@@ -9,7 +9,7 @@ DATABASE = "grupo119"
 URL = f"mongodb://{USER}:{PASS}@gray.ing.puc.cl/{DATABASE}?authSource=admin"
 client = MongoClient(URL)
 
-USER_KEYS = ['uid', 'name', 'last_name',
+MESSAGES_KEYS = ['uid', 'name', 'last_name',
             'occupation', 'follows', 'age']
 
 # Base de datos del grupo
@@ -37,12 +37,21 @@ def get_messages():
 
     return json.jsonify(message)
 
-@app.route("/messages/<int:uid>")
-def get_user(uid):
+@app.route("/messages/<int:mid>")
+def get_user(mid):
     '''
     Obtiene el usuario de id entregada
     '''
-    message = list(usuarios.find({"uid":uid}, {"_id": 0}))
+    message = list(usuarios.find({"mid": mid}, {"_id": 0}))
+
+    return json.jsonify(message)
+
+@app.route("/messages/?id1=<int:uid1>&id2=<int:uid2>")
+def get_user(uid1, uid2):
+    '''
+    Obtiene el usuario de id entregada
+    '''
+    message = list(usuarios.find({"sender":uid1}, {"receptant":uid2}, {"_id": 0}))
 
     return json.jsonify(message)
 
@@ -68,8 +77,8 @@ def delete_messages():
     '''
     Elimina el messages de id entregada
     '''
-    uid = request.json['uid']
-    messages.remove({"uid": uid})
+    mid = request.json['mid']
+    messages.remove({"mid": mid})
     return json.jsonify({"success": True})
 
 if __name__ == "__main__":
