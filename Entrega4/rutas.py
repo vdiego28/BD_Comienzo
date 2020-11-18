@@ -17,6 +17,7 @@ db = client["grupo119"]
 
 # Seleccionamos la collección de usuarios
 usuarios = db.usuarios
+messages = db.messages
 
 #Iniciamos la aplicación de flask
 app = Flask(__name__)
@@ -47,29 +48,29 @@ def get_user(uid):
     return json.jsonify(user)
 
 
-@app.route("/users", methods=['POST'])
-def create_user():
+@app.route("/messages", methods=['POST'])
+def create_messages():
     '''
-    Crea un nuevo usuario en la base de datos
+    Crea un nuevo messages en la base de datos
     Se  necesitan todos los atributos de model, a excepcion de _id
     '''
 
-    data = {key: request.json[key] for key in USER_KEYS}
+    data = {key: request.json[key] for key in MESSAGES_KEYS}
 
     # El valor de result nos puede ayudar a revisar
     # si el usuario fue insertado con éxito
-    result = usuarios.insert_one(data)
+    result = messages.insert_one(data)
 
     return json.jsonify({"success": True})
 
 
-@app.route("/users", methods=['DELETE'])
-def delete_user():
+@app.route("/messages", methods=['DELETE'])
+def delete_messages():
     '''
-    Elimina el usuario de id entregada
+    Elimina el messages de id entregada
     '''
     uid = request.json['uid']
-    usuarios.remove({"uid": uid})
+    messages.remove({"uid": uid})
     return json.jsonify({"success": True})
 
 if __name__ == "__main__":
