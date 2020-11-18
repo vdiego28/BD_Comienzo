@@ -52,7 +52,7 @@ def get_messages_users(uid1, uid2):
     '''
     Obtiene el usuario de id entregada
     '''
-    message = list(messages.find({"sender":uid1, "receptant":uid2}, {"sender":uid2, "receptant":uid1}, {"_id": 0}))
+    message = list(messages.find({"sender": uid1, "receptant": uid2}, {"sender": uid2, "receptant": uid1}, {"_id": 0}))
     return json.jsonify(message)
 
 
