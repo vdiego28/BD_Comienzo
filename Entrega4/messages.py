@@ -9,7 +9,7 @@ if __name__ == "__main__":
     URL = f"mongodb://{USER}:{PASS}@gray.ing.puc.cl/{DATABASE}?authSource=admin"
     client = MongoClient(URL)
 
-    MESSAGES_KEYS = ['uid', 'name', 'last_name', 'occupation', 'follows', 'age']
+    MESSAGES_KEYS = ['date', 'lat', 'long', 'message', 'mid', 'receptant', 'sender']
 
     # Base de datos del grupo
     db = client["grupo119"]
@@ -84,6 +84,3 @@ def delete_messages():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-# mongo -u grupo119 -p grupo119 gray.ing.puc.cl/grupo119 --authenticationDatabase admin
