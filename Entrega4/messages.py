@@ -62,11 +62,17 @@ def create_messages():
     Crea un nuevo messages en la base de datos
     Se  necesitan todos los atributos de model, a excepcion de _id
     '''
-    data = {key: request.json[key] for key in MESSAGES_KEYS}
-    # El valor de result nos puede ayudar a revisar
-    # si el usuario fue insertado con éxito
-    result = messages.insert_one(data)
-    return json.jsonify({"success": True})
+    mid = list(messages.find({"mid": request.json["mid"]}))
+    if len(mid) != 0:
+        return json.jsonify({"success": False})
+    try:
+        data = {key: request.json[key] for key in MESSAGES_KEYS}
+        # El valor de result nos puede ayudar a revisar
+        # si el usuario fue insertado con éxito
+        result = messages.insert_one(data)
+        return json.jsonify({"success": True})
+    except KeyError:
+        return json.jsonify({"success": False})
 
 
 @app.route("/messages", methods=['DELETE'])
