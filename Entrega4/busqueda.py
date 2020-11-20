@@ -47,18 +47,17 @@ def search_messages():
     '''
     recived = {key: request.json[key] for key in MESSAGES_KEYS}
     # recievd = request.json[key]
-    lista_and = []
     busqueda = ""
     if len(recived["required"]) > 0:
         obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
         busqueda += obligatorio
     if len(recived["forbidden"]) > 0:
-        prohibido = "-" + " -".join(recived["forbidden"])
+        prohibido = " -\"" + "\" -\"".join(recived["forbidden"]) + "\" "
         busqueda += prohibido
     if len(recived["desired"]) > 0:
-        maybe = " ".join(recived["desired"])
+        maybe = " " + " ".join(recived["desired"])
         busqueda += maybe
-    print(lista_and)
+    print(busqueda)
     if len(busqueda) > 0:
         message = list(messages.find({"$and": [{"$text": {"$search": busqueda}}, {"sender": recived["userId"]}]}, {"_id": 0}))
     else:
