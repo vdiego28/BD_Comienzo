@@ -47,16 +47,22 @@ def search_messages():
     '''
     recived = {key: request.json[key] for key in MESSAGES_KEYS}
     # recievd = request.json[key]
-    maybe = " ".join(recived["desired"])
-    # guardamos los maybe
-    data = messages.find({'$text': {'$search': maybe}}, {"description.value": 1})
-    # Guardamos los obligatorios
-    for key in recived["required"]:
-        data = messages.distinct({'$text': {"$search": f"(\"{key}\""}}, {"description.value": 1})
-    # Sacamos los prohibidos
-    for key in recived["forbidden"]:
-        data = messages.distinct({'$text': {"$search": f"(-\"{key}\""}}, {"description.value": 1})
-    data = messages.find({"userId": recived["userId"]})
+    lista_and = []
+    busqueda = ""
+    if len(recived["required"]) > 0:
+        obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
+        busqueda += obligatorio
+    if len(recived["forbidden"]) > 0:
+        prohibido = "-" + " -".join(recived["forbidden"])
+        busqueda += prohibido
+    if len(recived["desired"]) > 0:
+        maybe = " ".join(recived["desired"])
+        busqueda += maybe
+    print(lista_and)
+    if len(busqueda) > 0:
+        message = list(messages.find({"$and": [{"$text": {"$search": busqueda}}, {"sender": recived["userId"]}]}, {"_id": 0}))
+    else:
+        message = list(messages.find({"sender": recived["userId"]}, {"_id": 0}))
     return json.jsonify(message)
 
 
