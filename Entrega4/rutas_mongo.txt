@@ -1,2 +1,3 @@
 ingresar al server: mongo -u grupo119 -p grupo119 gray.ing.puc.cl/grupo119 --authenticationDatabase admin
 agregar datos: mongoimport --collection messages --drop --file messages.json --jsonArray --uri "mongodb://grupo119:grupo119@gray.ing.puc.cl:27017/grupo119?authSource=admin"
+crear indice: db.messages.createIndex({'message':'text'})

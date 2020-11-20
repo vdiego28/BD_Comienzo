@@ -10,8 +10,7 @@ if __name__ == "__main__":
     URL = f"mongodb://{USER}:{PASS}@gray.ing.puc.cl/{DATABASE}?authSource=admin"
     client = MongoClient(URL)
 
-    MESSAGES_KEYS = ['uid', 'name', 'last_name',
-                'occupation', 'follows', 'age']
+    MESSAGES_KEYS = ['desired', 'required', 'forbidden', 'userId']
 
     # Base de datos del grupo
     db = client["grupo119"]
@@ -23,6 +22,16 @@ if __name__ == "__main__":
     app = Flask(__name__)
 
 
+'''
+ejemplo: {
+    "desired":["Hola", "Viste las noticias?"],
+    "required": ["arrastre", "magikarp"],
+    "forbidden": ["origami", "Qué","tal?"],
+    "userId":
+    }
+'''
+
+
 @app.route("/")
 def home():
     '''
@@ -30,21 +39,24 @@ def home():
     '''
     return "<h1>¡Hola, estas en archivo de busqueda!</h1>"
 
-@app.route("/text-search)
-def search_messages(mid):
+@app.route("/text-search")
+def search_messages():
     '''
     Obtiene el contenido de los mensajes
+    ejemplo: collection.find({"$text": {"$search": your search}})
     '''
     recived = {key: request.json[key] for key in MESSAGES_KEYS}
-    maybe = " ".join(recived["maybe"])
+    # recievd = request.json[key]
+    maybe = " ".join(recived["desired"])
     # guardamos los maybe
-    data = messages.find({"sender": recived["userID"]}, {$text: {$search: maybe}}, {"description.value": 1})
+    data = messages.find({'$text': {'$search': maybe}}, {"description.value": 1})
     # Guardamos los obligatorios
     for key in recived["required"]:
-        data = data.find({$text: {"$search": f"(\"{key}\""}}, {"description.value": 1})
+        data = messages.distinct({'$text': {"$search": f"(\"{key}\""}}, {"description.value": 1})
     # Sacamos los prohibidos
     for key in recived["forbidden"]:
-        data = data.find({$text: {"$search": f"(-\"{key}\""}}, {"description.value": 1})
+        data = messages.distinct({'$text': {"$search": f"(-\"{key}\""}}, {"description.value": 1})
+    data = messages.find({"userId": recived["userId"]})
     return json.jsonify(message)
 
 
