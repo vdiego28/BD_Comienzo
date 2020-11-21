@@ -34,8 +34,17 @@ def get_messages():
     '''
     Obtiene todos los message
     '''
-    message = list(messages.find({}, {"_id": 0}))
-    return json.jsonify(message)
+    try:
+        uid1 = int(request.args["id1"])
+        uid2 = int(request.args["id2"])
+        first = {"$and": [{"sender": uid1}, {"receptant": uid2}]}
+        second = {"$and": [{"sender": uid2}, {"receptant": uid1}]}
+        busqueda = {"$or": [first, second]}
+        result = list(messages.find(busqueda, {"_id": 0}))
+        return json.jsonify(result)
+    except KeyError:
+        message = list(messages.find({}, {"_id": 0}))
+        return json.jsonify(message)
 
 
 @app.route("/messages/<int:mid>")
@@ -47,13 +56,17 @@ def get_message(mid):
     return json.jsonify(message)
 
 
-@app.route("/messages?id1=<int:uid1>&id2=<int:uid2>")
+# @app.route("/messages?id1=<int:uid1>&id2=<int:uid2>")
 def get_messages_users(uid1, uid2):
     '''
     Obtiene el usuario de id entregada
     '''
-    message = list(messages.find({"sender": uid1, "receptant": uid2}, {"sender": uid2, "receptant": uid1}, {"_id": 0}))
-    return json.jsonify(message)
+    print(uid1)
+    first = [{"sender": uid1}, {"receptant": uid2}]
+    second = [{"sender": uid2}, {"receptant": uid1}]
+    busqueda = {"$or": [first, second]}
+    result = list(messages.find({"receptant": uid1}, {"_id": 0}))
+    return json.jsonify(result)
 
 
 @app.route("/messages", methods=['POST'])
