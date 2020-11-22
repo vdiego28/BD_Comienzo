@@ -17,6 +17,7 @@ if __name__ == "__main__":
 
     # Seleccionamos la collección de message
     messages = db.messages
+    usuarios = db.usuarios
 
     # Iniciamos la aplicación de flask
     app = Flask(__name__)
@@ -46,7 +47,7 @@ def search_messages():
     ejemplo: collection.find({"$text": {"$search": your search}})
     '''
     recived = {key: request.json[key] for key in MESSAGES_KEYS}
-    error=False
+    error = False
     if not recived:#el diccionario esta vacio
         error=True #deben retornarse todos los mensajes
     #if False:#no hay body, no se como verificarlo?
@@ -64,11 +65,8 @@ INTERNAL SERVER ERROR). su try y pico?
         4. Si no llega body se deben retornar todos los mensajes (if false...)
         5. Se puede hacer una busqueda sin user_id?'''
     #chequeando id
-    if "userId" in recived.keys():
-        try:
-            user = usuarios.find({"uid": recived["userID"]}, {"_id": 0})
-        except KeyError:
-            return json.jsonify(["No existe la id"])
+    if not "userId" in recived.keys():
+        return json.jsonify(["No hay id"])
 
     # recievd = request.json[key]
     busqueda = ""
