@@ -154,7 +154,6 @@ def search_messages():
     if len(recived["required"]) > 0:
         obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
         busqueda_buena += obligatorio
-        print(busqueda_buena)
 
     '''
     Segundo tomo todas las palabras que pueden como pueden que no estén
@@ -174,7 +173,6 @@ def search_messages():
         negativ = "\"" + "\" \"".join(recived["forbidden"]) + "\" "
         alternative = " ".join(recived["forbidden"])
         d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": alternative}}]}, {"_id": 0}))
-        print("lista prohibida ", d_malos)
 
     '''
     Si no hay palabras obligatorias o deseadas entonces buscamos todos los mensajes del usuario
@@ -189,11 +187,8 @@ def search_messages():
     Guardamos los ids de los mensajes dentro de Sets y luego eliminamos los resultados de las palabras prohibidas
     '''
     set_buenos = set([i['mid'] for i in d_buenos])
-    print(set_buenos)
     set_malos = set([i['mid'] for i in d_malos])
-    print(set_malos)
     resultado_final = list(set_buenos - set_malos)
-    print(resultado_final)
 
     '''
     Finalmente realizamos una busqueda en donde los mensajes tengan el ids de los mensajes que se filtraron anteriormente
