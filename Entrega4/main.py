@@ -22,14 +22,7 @@ if __name__ == "__main__":
     app = Flask(__name__)
 
 
-@app.route("/")
-def home():
-    '''
-    Página de inicio
-    '''
-    return "<h1>¡Hola, estas en el archivo de main!</h1>"
-
-# Users
+# Sección usuarios
 @app.route("/users")
 def get_users():
     '''
@@ -44,24 +37,30 @@ def get_user(uid):
     Obtiene el usuario de id entregada
     '''
     user = list(usuarios.find({"uid": uid}, {"_id": 0}))
-    return json.jsonify(user)
+    if len(message) != 0:
+        return json.jsonify(message)
+    else:
+        return json.jsonify([{"success": False, "Error": f"No existe un mensaje con uid {uid}"}])
 
-#Messages
+# Sección mensajes
 @app.route("/messages")
 def get_messages():
     '''
     Obtiene todos los message
     '''
-    try:  # Intenta obtener los dos ids desde el url del tipo ?id1=57&id2=35
+    try:
         uid1 = int(request.args["id1"])
         uid2 = int(request.args["id2"])
         first = {"$and": [{"sender": uid1}, {"receptant": uid2}]}
         second = {"$and": [{"sender": uid2}, {"receptant": uid1}]}
         busqueda = {"$or": [first, second]}
         result = list(messages.find(busqueda, {"_id": 0}))
-        return json.jsonify(result)
-    except KeyError:  # Si estos ids no existen, entonces entregamos todos los mensajes
-        message = list(messages.find({}, {"_id": 0}))
+        if len(result) != 0:
+            return json.jsonify(result)
+        else:
+            return json.jsonify([{"success": False, "Error": "No existe un mensaje con este mid"}])
+    except KeyError:
+        result = list(messages.find({}, {"_id": 0}))
         return json.jsonify(message)
 
 
@@ -77,14 +76,17 @@ def get_message(mid):
 # @app.route("/messages?id1=<int:uid1>&id2=<int:uid2>")
 def get_messages_users(uid1, uid2):
     '''
-    Obtiene los usuarios de ids entregadas
-    Busca messages en ambas direcciones
+    Obtiene el usuario de id entregada
     '''
+    print(uid1)
     first = [{"sender": uid1}, {"receptant": uid2}]
     second = [{"sender": uid2}, {"receptant": uid1}]
-    busqueda = {"$or": [first, second]}
-    result = list(messages.find({"receptant": uid1}, {"_id": 0}))
-    return json.jsonify(result)
+    busqueda = {"or": [first, second]}
+    result = list(messages.find({"$or": busqueda["or"]}, {"_id": 0}))
+    if len(result) != 0:
+        return json.jsonify(result)
+    else:
+        return json.jsonify({"success": False, "Error": "No existe un mensaje con este mid"})
 
 
 @app.route("/messages", methods=['POST'])
@@ -93,17 +95,24 @@ def create_messages():
     Crea un nuevo messages en la base de datos
     Se  necesitan todos los atributos de model, a excepcion de _id
     '''
-    mid = list(messages.find({"mid": request.json["mid"]}))
-    if len(mid) != 0:
-        return json.jsonify({"success": False})
     try:
-        data = {key: request.json[key] for key in MESSAGES_KEYS}
-        # El valor de result nos puede ayudar a revisar
-        # si el usuario fue insertado con éxito
-        result = messages.insert_one(data)
-        return json.jsonify({"success": True})
-    except KeyError:  # Si algún valor no se entregó se levanta esta excepción y retornamos
-        return json.jsonify({"success": "Faltan valores de llaves"})
+        MESSAGE_KEYS2 = ['date', 'lat', 'long', 'message', 'receptant', 'sender']
+        faltantes = []
+
+        for key in MESSAGE_KEYS2:
+            if key not in request.json.keys():
+                faltantes.append(key)
+
+        if faltantes:
+            return json.jsonify([{'success': False, 'Required Keys': [key for key in faltantes]}])
+        data = {key: request.json[key] for key in MESSAGES_KEYS2}
+        mid = messages.find_one(sort=[("mid", -1)])["mid"] + 1
+        data['mid'] = mid
+        messages.insert_one(data)
+        return json.jsonify([{"success": True}])
+
+    except KeyError:  # Si algún valor no sirve como llave...
+        return json.jsonify([{"success": 'False', 'Error': 'Keys invalidas entregadas'}])
 
 
 @app.route("/messages", methods=['DELETE'])
@@ -116,40 +125,90 @@ def delete_messages():
         messages.remove({"mid": mid})
         return json.jsonify({"success": True})
     except TypeError:  # Si falla entonces retornamos False
-        return json.jsonify({"success": False})
+        return json.jsonify({"success": False, "Error": f"No existe mensaje con mid: {mid}"})
 
 
-#Busqueda de texto
+# Sección busqueda de texto
+'''
+Se espera que el contenido del body sea del estilo:
+{
+    "desired": ["Buenas tarde", "P=NP => N=1"],
+    "required": ["Saludos"],
+    "forbidden": ["Palabrotas", "GPU"],
+    "userId": 0
+    }
+'''
+
+
 @app.route("/text-search")
 def search_messages():
     '''
-    Obtiene el contenido de los mensajes
-    ejemplo: collection.find({"$text": {"$search": your search}})
+    Obtiene el contenido del body, si este no tiene todas las llaves o está vacio retornamos el error
     '''
-    recived = {key: request.json[key] for key in MESSAGES_KEYS}
-    # recievd = request.json[key]
-    busqueda = ""
-    if "required" in recived.keys():  # Ingresamos los valores obligatorios
-        if len(recived["required"]) > 0:
-            obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
-            busqueda += obligatorio
-    if "desired" in recived.keys():  # agregamos los valores deseados
-        if len(recived["desired"]) > 0:
-            maybe = " " + " ".join(recived["desired"])
-            busqueda += maybe
-    if "forbidden" in recived.keys():  # agregamos los valores prohibidos
-        if len(recived["forbidden"]) > 0:
-            prohibido = " -\"" + "\" -\"".join(recived["forbidden"]) + "\" "
-            if len(busqueda) == 0:
-                result = messages.find({"$and": [{'$text': {"$search": {'$not': {'$in': recived["forbidden"]}}}}, {"sender": recived["userId"]}]}, {"_id": 0})
-                return json.jsonify(list(result))
-            busqueda += "x " + prohibido
-    print(busqueda)
-    if len(busqueda) > 0:
-        message = list(messages.find({"$and": [{"$text": {"$search": busqueda}}, {"sender": recived["userId"]}]}, {"_id": 0}))
+    try:
+        recived = {key: request.json[key] for key in MESSAGES_KEYS}
+        if not received:
+            result = list(messages.find({}, {"_id": 0}))
+            return json.jsonify(result)
+    except KeyError:
+        return json.jsonify([{"success": "Falta(n) llave(s)"}])
+    except TypeError:
+        result = list(messages.find({}, {"_id": 0}))
+        return json.jsonify(result)
+    busqueda_buena = ""
+    d_malos = []
+
+    '''
+    Primero tomo todas las palabras que se requiere que estén y las uno entre comillas
+    Luego las guardo todas en un un string
+    '''
+
+    if len(recived["required"]) > 0:
+        obligatorio = "\"" + "\" \"".joi
+        n(recived["required"]) + "\" "
+        busqueda_buena += obligatorio
+
+    '''
+    Segundo tomo todas las palabras que pueden como pueden que no estén
+    Luego las guardo todas en el mismo string de antes
+    '''
+
+    if len(recived["desired"]) > 0:
+        maybe = " " + " ".join(recived["desired"])
+        busqueda_buena += maybe
+
+    '''
+    Tercero, tomamos las palabras que no deben estar y las unimos
+    Realizamos una busqueda en donde el usuario debe ser igual al entregado y los mensajes contengan las palabras prohibidas
+    Guardamos los ids de los mensajes encontrados
+    '''
+    if len(recived["forbidden"]) > 0:
+        prohibido = " -\"" + "\" -\"".join(recived["forbidden"]) + "\" "
+        negativ = "\"" + "\" \"".join(recived["forbidden"]) + "\" "
+        d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": negativ}}]}, {"_id": 0}))
+
+    '''
+    Si no hay palabras obligatorias o deseadas entonces buscamos todos los mensajes del usuario
+    sino, buscamos las palabras
+    '''
+    if len(busqueda_buena) > 0:
+        d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
     else:
-        message = list(messages.find({"sender": recived["userId"]}, {"_id": 0}))
-    return json.jsonify(message)
+        d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+
+    '''
+    Guardamos los ids de los mensajes dentro de Sets y luego eliminamos los resultados de las palabras prohibidas
+    '''
+    set_buenos = set([i['mid'] for i in d_buenos])
+    set_malos = set([i['mid'] for i in d_malos])
+    resultado_final = list(set_buenos - set_malos)
+
+    '''
+    Finalmente realizamos una busqueda en donde los mensajes tengan el ids de los mensajes que se filtraron anteriormente
+    '''
+    result = list(messages.find({'mid': {"$in": resultado_final}}, {"_id": 0}))
+    return json.jsonify(result)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

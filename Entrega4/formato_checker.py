@@ -116,6 +116,7 @@ class Consulta:
         return respuesta
 
     def encontrar(self, respuesta, tipo="mensajes", llaves=None, filtro=7):
+        print(respuesta)
         primero = False
         if llaves is None:
             llaves, primero = [], True

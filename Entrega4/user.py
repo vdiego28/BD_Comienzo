@@ -42,7 +42,10 @@ def get_user(uid):
     Obtiene el usuario de id entregada
     '''
     user = list(usuarios.find({"uid": uid}, {"_id": 0}))
-    return json.jsonify(user)
+    if len(message) != 0:
+        return json.jsonify(message)
+    else:
+        return json.jsonify([{"success": False, "Error": f"No existe un mensaje con uid {uid}"}])
 
 
 if __name__ == "__main__":

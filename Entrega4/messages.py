@@ -41,9 +41,12 @@ def get_messages():
         second = {"$and": [{"sender": uid2}, {"receptant": uid1}]}
         busqueda = {"$or": [first, second]}
         result = list(messages.find(busqueda, {"_id": 0}))
-        return json.jsonify(result)
+        if len(result) != 0:
+            return json.jsonify(result)
+        else:
+            return json.jsonify([{"success": False, "Error": "No existe un mensaje con este mid"}])
     except KeyError:
-        message = list(messages.find({}, {"_id": 0}))
+        result = list(messages.find({}, {"_id": 0}))
         return json.jsonify(message)
 
 
@@ -64,9 +67,12 @@ def get_messages_users(uid1, uid2):
     print(uid1)
     first = [{"sender": uid1}, {"receptant": uid2}]
     second = [{"sender": uid2}, {"receptant": uid1}]
-    busqueda = {"$or": [first, second]}
-    result = list(messages.find({"receptant": uid1}, {"_id": 0}))
-    return json.jsonify(result)
+    busqueda = {"or": [first, second]}
+    result = list(messages.find({"$or": busqueda["or"]}, {"_id": 0}))
+    if len(result) != 0:
+        return json.jsonify(result)
+    else:
+        return json.jsonify({"success": False, "Error": "No existe un mensaje con este mid"})
 
 
 @app.route("/messages", methods=['POST'])
@@ -75,17 +81,24 @@ def create_messages():
     Crea un nuevo messages en la base de datos
     Se  necesitan todos los atributos de model, a excepcion de _id
     '''
-    mid = list(messages.find({"mid": request.json["mid"]}))
-    if len(mid) != 0:
-        return json.jsonify({"success": False})
     try:
-        data = {key: request.json[key] for key in MESSAGES_KEYS}
-        # El valor de result nos puede ayudar a revisar
-        # si el usuario fue insertado con éxito
-        result = messages.insert_one(data)
-        return json.jsonify({"success": True})
-    except KeyError:
-        return json.jsonify({"success": False})
+        MESSAGE_KEYS2 = ['date', 'lat', 'long', 'message', 'receptant', 'sender']
+        faltantes = []
+
+        for key in MESSAGE_KEYS2:
+            if key not in request.json.keys():
+                faltantes.append(key)
+
+        if faltantes:
+            return json.jsonify([{'success': False, 'Required Keys': [key for key in faltantes]}])
+        data = {key: request.json[key] for key in MESSAGES_KEYS2}
+        mid = messages.find_one(sort=[("mid", -1)])["mid"] + 1
+        data['mid'] = mid
+        messages.insert_one(data)
+        return json.jsonify([{"success": True}])
+
+    except KeyError:  # Si algún valor no sirve como llave...
+        return json.jsonify([{"success": 'False', 'Error': 'Keys invalidas entregadas'}])
 
 
 @app.route("/messages", methods=['DELETE'])
@@ -98,7 +111,7 @@ def delete_messages():
         messages.remove({"mid": mid})
         return json.jsonify({"success": True})
     except TypeError:  # Si falla entonces retornamos False
-        return json.jsonify({"success": False})
+        return json.jsonify({"success": False, "Error": f"No existe mensaje con mid: {mid}""})
 
 
 if __name__ == "__main__":

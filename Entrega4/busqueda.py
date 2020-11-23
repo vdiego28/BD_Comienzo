@@ -27,7 +27,7 @@ ejemplo: {
     "desired":["Hola", "Viste las noticias?"],
     "required": ["arrastre", "magikarp"],
     "forbidden": ["origami", "Qué","tal?"],
-    "userId":
+    "userId": 19
     }
 '''
 
@@ -39,36 +39,84 @@ def home():
     '''
     return "<h1>¡Hola, estas en archivo de busqueda!</h1>"
 
+
+'''
+Se espera que el contenido del body sea del estilo:
+{
+    "desired": palabras_deseada,
+    "required": palabras_obligatoria,
+    "forbidden": palabras_prohibida,
+    "userId": Id_usuario
+    }
+'''
 @app.route("/text-search")
 def search_messages():
     '''
-    Obtiene el contenido de los mensajes
-    ejemplo: collection.find({"$text": {"$search": your search}})
+    Obtiene el contenido del body, si este no tiene todas las llaves o está vacio retornamos el error
     '''
-    recived = {key: request.json[key] for key in MESSAGES_KEYS}
-    # recievd = request.json[key]
-    busqueda = ""
-    if "required" in recived.keys():
-        if len(recived["required"]) > 0:
-            obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
-            busqueda += obligatorio
-    if "desired" in recived.keys():
-        if len(recived["desired"]) > 0:
-            maybe = " " + " ".join(recived["desired"])
-            busqueda += maybe
-    if "forbidden" in recived.keys():
-        if len(recived["forbidden"]) > 0:
-            prohibido = " -\"" + "\" -\"".join(recived["forbidden"]) + "\" "
-            if len(busqueda) == 0:
-                result = messages.find({"$and": [{'$text': {"$search": {'$not': {'$in': recived["forbidden"]}}}}, {"sender": recived["userId"]}]}, {"_id": 0})
-                return json.jsonify(list(result))
-            busqueda += "x " + prohibido
-    print(busqueda)
-    if len(busqueda) > 0:
-        message = list(messages.find({"$and": [{"$text": {"$search": busqueda}}, {"sender": recived["userId"]}]}, {"_id": 0}))
+    try:
+        recived = {key: request.json[key] for key in MESSAGES_KEYS}
+        if not received:
+            result = list(messages.find({}, {"_id": 0}))
+            return json.jsonify(result)
+    except KeyError:
+        return json.jsonify([{"success": "Falta(n) llave(s)"}])
+    except TypeError:
+        result = list(messages.find({}, {"_id": 0}))
+        return json.jsonify(result)
+    busqueda_buena = ""
+    d_malos = []
+
+    '''
+    Primero tomo todas las palabras que se requiere que estén y las uno entre comillas
+    Luego las guardo todas en un un string
+    '''
+
+    if len(recived["required"]) > 0:
+        obligatorio = "\"" + "\" \"".joi
+        n(recived["required"]) + "\" "
+        busqueda_buena += obligatorio
+
+    '''
+    Segundo tomo todas las palabras que pueden como pueden que no estén
+    Luego las guardo todas en el mismo string de antes
+    '''
+
+    if len(recived["desired"]) > 0:
+        maybe = " " + " ".join(recived["desired"])
+        busqueda_buena += maybe
+
+    '''
+    Tercero, tomamos las palabras que no deben estar y las unimos
+    Realizamos una busqueda en donde el usuario debe ser igual al entregado y los mensajes contengan las palabras prohibidas
+    Guardamos los ids de los mensajes encontrados
+    '''
+    if len(recived["forbidden"]) > 0:
+        prohibido = " -\"" + "\" -\"".join(recived["forbidden"]) + "\" "
+        negativ = "\"" + "\" \"".join(recived["forbidden"]) + "\" "
+        d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": negativ}}]}, {"_id": 0}))
+
+    '''
+    Si no hay palabras obligatorias o deseadas entonces buscamos todos los mensajes del usuario
+    sino, buscamos las palabras
+    '''
+    if len(busqueda_buena) > 0:
+        d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
     else:
-        message = list(messages.find({"sender": recived["userId"]}, {"_id": 0}))
-    return json.jsonify(message)
+        d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+
+    '''
+    Guardamos los ids de los mensajes dentro de Sets y luego eliminamos los resultados de las palabras prohibidas
+    '''
+    set_buenos = set([i['mid'] for i in d_buenos])
+    set_malos = set([i['mid'] for i in d_malos])
+    resultado_final = list(set_buenos - set_malos)
+
+    '''
+    Finalmente realizamos una busqueda en donde los mensajes tengan el ids de los mensajes que se filtraron anteriormente
+    '''
+    result = list(messages.find({'mid': {"$in": resultado_final}}, {"_id": 0}))
+    return json.jsonify(result)
 
 
 if __name__ == "__main__":
