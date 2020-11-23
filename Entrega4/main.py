@@ -10,6 +10,7 @@ if __name__ == "__main__":
     client = MongoClient(URL)
 
     MESSAGES_KEYS = ['uid', 'name', 'last_name', 'occupation', 'follows', 'age']
+    SEARCH_KEYS = ['desired', 'required', 'forbidden', 'userId']
 
     # Base de datos del grupo
     db = client["grupo119"]
@@ -37,8 +38,8 @@ def get_user(uid):
     Obtiene el usuario de id entregada
     '''
     user = list(usuarios.find({"uid": uid}, {"_id": 0}))
-    if len(message) != 0:
-        return json.jsonify(message)
+    if len(user) != 0:
+        return json.jsonify(user)
     else:
         return json.jsonify([{"success": False, "Error": f"No existe un mensaje con uid {uid}"}])
 
@@ -58,10 +59,10 @@ def get_messages():
         if len(result) != 0:
             return json.jsonify(result)
         else:
-            return json.jsonify([{"success": False, "Error": "No existe un mensaje con este mid"}])
+            return json.jsonify([{"success": False, "Error": "No existe un mensajes entre estos usuarios"}])
     except KeyError:
         result = list(messages.find({}, {"_id": 0}))
-        return json.jsonify(message)
+        return json.jsonify(result)
 
 
 @app.route("/messages/<int:mid>")
@@ -70,23 +71,10 @@ def get_message(mid):
     Obtiene el message de id entregada
     '''
     message = list(messages.find({"mid": mid}, {"_id": 0}))
-    return json.jsonify(message)
-
-
-# @app.route("/messages?id1=<int:uid1>&id2=<int:uid2>")
-def get_messages_users(uid1, uid2):
-    '''
-    Obtiene el usuario de id entregada
-    '''
-    print(uid1)
-    first = [{"sender": uid1}, {"receptant": uid2}]
-    second = [{"sender": uid2}, {"receptant": uid1}]
-    busqueda = {"or": [first, second]}
-    result = list(messages.find({"$or": busqueda["or"]}, {"_id": 0}))
-    if len(result) != 0:
-        return json.jsonify(result)
+    if len(message) != 0:
+        return json.jsonify(message)
     else:
-        return json.jsonify({"success": False, "Error": "No existe un mensaje con este mid"})
+        return json.jsonify([{"success": False, "Error": f"No existe un mensaje con uid {mid}"}])
 
 
 @app.route("/messages", methods=['POST'])
@@ -146,8 +134,8 @@ def search_messages():
     Obtiene el contenido del body, si este no tiene todas las llaves o está vacio retornamos el error
     '''
     try:
-        recived = {key: request.json[key] for key in MESSAGES_KEYS}
-        if not received:
+        recived = {key: request.json[key] for key in SEARCH_KEYS}
+        if not recived:
             result = list(messages.find({}, {"_id": 0}))
             return json.jsonify(result)
     except KeyError:
@@ -164,9 +152,9 @@ def search_messages():
     '''
 
     if len(recived["required"]) > 0:
-        obligatorio = "\"" + "\" \"".joi
-        n(recived["required"]) + "\" "
+        obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
         busqueda_buena += obligatorio
+        print(busqueda_buena)
 
     '''
     Segundo tomo todas las palabras que pueden como pueden que no estén
@@ -183,9 +171,10 @@ def search_messages():
     Guardamos los ids de los mensajes encontrados
     '''
     if len(recived["forbidden"]) > 0:
-        prohibido = " -\"" + "\" -\"".join(recived["forbidden"]) + "\" "
         negativ = "\"" + "\" \"".join(recived["forbidden"]) + "\" "
-        d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": negativ}}]}, {"_id": 0}))
+        alternative = " ".join(recived["forbidden"])
+        d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": alternative}}]}, {"_id": 0}))
+        print("lista prohibida ", d_malos)
 
     '''
     Si no hay palabras obligatorias o deseadas entonces buscamos todos los mensajes del usuario
@@ -200,8 +189,11 @@ def search_messages():
     Guardamos los ids de los mensajes dentro de Sets y luego eliminamos los resultados de las palabras prohibidas
     '''
     set_buenos = set([i['mid'] for i in d_buenos])
+    print(set_buenos)
     set_malos = set([i['mid'] for i in d_malos])
+    print(set_malos)
     resultado_final = list(set_buenos - set_malos)
+    print(resultado_final)
 
     '''
     Finalmente realizamos una busqueda en donde los mensajes tengan el ids de los mensajes que se filtraron anteriormente
