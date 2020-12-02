@@ -73,4 +73,45 @@ def create_messages(sender):
         return json.jsonify([{"success": 'False', 'Error': 'Keys invalidas entregadas'}])
 
 
+@app.route("/text-search")
+def search_messages():
+    try:
+        recived = {key: request.json[key] for key in SEARCH_KEYS}
+        if not recived:
+            result = list(messages.find({}, {"_id": 0}))
+            return json.jsonify(result)
+    except KeyError:
+        return json.jsonify([{"success": "Falta(n) llave(s)"}])
+    except TypeError:
+        result = list(messages.find({}, {"_id": 0}))
+        return json.jsonify(result)
+    busqueda_buena = ""
+
+    if len(recived["required"]) > 0:
+        obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
+        busqueda_buena += obligatorio
+
+    if len(recived["desired"]) > 0:
+        maybe = " " + " ".join(recived["desired"])
+        busqueda_buena += maybe
+
+    d_malos = []
+    if len(recived["forbidden"]) > 0:
+        for word in recived["forbidden"]:
+            finds = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": word}}]}, {"_id": 0}))
+            d_malos.extend(finds)
+
+    if len(busqueda_buena) > 0:
+        d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
+    else:
+        d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+
+    set_buenos = set([i['mid'] for i in d_buenos])
+    set_malos = set([i['mid'] for i in d_malos])
+    resultado_final = list(set_buenos - set_malos)
+
+    result = list(messages.find({'mid': {"$in": resultado_final}}, {"_id": 0}))
+    return json.jsonify(result)
+
+
 app.run(debug=True)
