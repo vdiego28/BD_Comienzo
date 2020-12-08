@@ -1,4 +1,4 @@
-<?php include('../../templates/header_paginas.html');   # Ejemplo que me pasó el profe?>
+<?php include('../../templates/header_paginas.html');?>
 <?php $id_usuario = $_GET['ID'];
 ?>
 <body>
