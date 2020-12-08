@@ -73,19 +73,16 @@ def create_messages(sender):
         return json.jsonify([{"success": 'False', 'Error': 'Keys invalidas entregadas'}])
 
 
+
 @app.route("/text-search")
 def search_messages():
-    try:
-        recived = {key: request.json[key] for key in SEARCH_KEYS}
-        if not recived:
-            result = list(messages.find({}, {"_id": 0}))
-            return json.jsonify(result)
-    except KeyError:
-        return json.jsonify([{"success": "Falta(n) llave(s)"}])
-    except TypeError:
-        result = list(messages.find({}, {"_id": 0}))
-        return json.jsonify(result)
+    recived = request.json
+    for llave in SEARCH_KEYS:
+        if llave not in recived.keys():
+            recived[llave] = []
+
     busqueda_buena = ""
+    d_malos = []
 
     if len(recived["required"]) > 0:
         obligatorio = "\"" + "\" \"".join(recived["required"]) + "\" "
@@ -95,16 +92,24 @@ def search_messages():
         maybe = " " + " ".join(recived["desired"])
         busqueda_buena += maybe
 
-    d_malos = []
     if len(recived["forbidden"]) > 0:
-        for word in recived["forbidden"]:
-            finds = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": word}}]}, {"_id": 0}))
-            d_malos.extend(finds)
-
+        negativ = "\"" + "\" \"".join(recived["forbidden"]) + "\" "
+        alternative = " ".join(recived["forbidden"])
+        if recived["userId"] != []:
+            d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": alternative}}]}, {"_id": 0}))
+        else:
+            d_malos = list(messages.find({"$text": {"$search": alternative}}, {"_id": 0}))
     if len(busqueda_buena) > 0:
-        d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
+        if recived["userId"] != []:
+            d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
+        else:
+            d_buenos = list(messages.find({"$text": {"$search": busqueda_buena}}, {"_id": 0}))
+
     else:
-        d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+        if recived["userId"] != []:
+            d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+        else:
+            d_buenos = list(messages.find({}, {"_id": 0, "mid": 1}))
 
     set_buenos = set([i['mid'] for i in d_buenos])
     set_malos = set([i['mid'] for i in d_malos])
