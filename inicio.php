@@ -9,7 +9,7 @@ de la ayudantia.
 <body>
   
   <h1 align="center">Puertos e Instalaciones </h1>
-  <p style="text-align:center;">Aquí se podra encontrar información sobre puertos.</p>
+  <p style="text-align:center;">Aquí se podra encontrar información sobre los puertos.</p>
   <br>
 
   <br>

@@ -19,6 +19,6 @@
   <br>
 
   <form align="center" action="nueva_sesion.php">
-      ¡¿No se ha creado una sesión?! Registrese
+      ¡¿No se ha creado una sesión?! Registrese acá
     <input type="submit" value="Registrase">
   </form>
