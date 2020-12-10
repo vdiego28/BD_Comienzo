@@ -1,6 +1,7 @@
 <?php include('templates/header.html'); ?>
 
 <body>
+<p> Comprobando nueva sesion. </p>
 <?php
     require("config/conexion.php");
 
