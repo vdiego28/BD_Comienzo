@@ -4,7 +4,7 @@
   <p style="text-align:center;">Inicio de sesión</p>
   <br>
 
-  <form align="center" action="comprobar_usuario.php" method="post">
+  <form align="center" action="comprobar_usuario.php">
         Nombre:
         <input type="text" name="nombre_usuario">
         </br>
@@ -18,7 +18,7 @@
   <br>
   <br>
 
-  <form align="center" action="nueva_sesion.php" method="post">
+  <form align="center" action="nueva_sesion.php">
       ¡¿No se ha creado una sesión?! Venga pa' aca mi loko
     <input type="submit" value="Registrase">
   </form>

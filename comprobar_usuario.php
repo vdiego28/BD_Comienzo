@@ -14,7 +14,7 @@
     $num_col = pg_num_rows($result);
 
     if ($num_col = 0) { ?>
-        <form align="center" action="nueva_sesion.php" method="post">
+        <form align="center" action="nueva_sesion.php">
         <p> Lo siento pero no existe usuario con esta contraseña </p>
         <br/><br/>
         <input type="submit" value="Registrarse">
@@ -22,7 +22,7 @@
     <?php }
 
     if ($num_col != 0) { ?>
-        <form align="center" action="inicio.php" method="post">
+        <form align="center" action="inicio.php">
         <p> Todo en orden, puede ingresar </p>
         <br/></br>
         <input type="submit" value="Ingresar">
