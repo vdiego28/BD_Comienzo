@@ -6,7 +6,7 @@
 
     <br>
 
-    <form align="center" action="ingresar_nuevo_usuario.php" method="post">
+    <form align="center" action="ingresar_nuevo_usuario.php">
         Nombre:
         <input type="text" name="nombre_usuario">
         </br>
