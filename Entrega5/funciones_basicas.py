@@ -22,6 +22,14 @@ usuarios = db.usuarios
 app = Flask(__name__)
 
 
+@app.route("/")
+def home():
+    '''
+    Página de inicio
+    '''
+    return "<h1>¡Hola!</h1>"
+
+
 @app.route("/receptant/<int:receptant>")
 def message_recived(receptant):
     '''
