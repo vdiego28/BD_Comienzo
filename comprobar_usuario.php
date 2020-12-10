@@ -22,7 +22,7 @@
     <?php }
 
     if ($num_col != 0) { ?>
-        <form align="center" action="index.php" method="post">
+        <form align="center" action="inicio.php" method="post">
         <p> Todo en orden, puede ingresar </p>
         <br/></br>
         <input type="submit" value="Ingresar">
