@@ -26,7 +26,7 @@
     );
     
     $context  = stream_context_create( $options );
-    $result = file_get_contents( 'https://miApi.herokuapp.com/text-search', false, $context );
+    $result = file_get_contents( 'https://entrega5-bases..herokuapp.com/text-search', false, $context );
     $response = json_decode($result, true);
 
     ?>
