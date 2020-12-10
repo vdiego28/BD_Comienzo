@@ -6,7 +6,7 @@
 
     <br>
 
-    <form align="center" action="ingresar_nuevo_usuario.php">
+    <form align="center" action="consultas/consulta_barco_calypso.php">
         Nombre:
         <input type="text" name="nombre_usuario">
         </br>
