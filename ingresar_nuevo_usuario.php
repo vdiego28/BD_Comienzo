@@ -26,7 +26,7 @@
     <?php endif;
 
     if ($total==0):
-        $agregar = "INSERT INTO usuarios VALUES ('%nombre%', '%edad%', '%pasaporte%','%nacionalidad%', '%contrasena%');"
+        $agregar = "INSERT INTO usuarios VALUES ('%nombre%', '%edad%', '%pasaporte%','%nacionalidad%', '%contrasena%');";
         $result_crate = $db -> prepare($query);
         $result_create -> execute();
         echo "<p> Se creó el usuario con éxito. </p>"; ?>
