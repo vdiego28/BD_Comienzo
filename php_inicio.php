@@ -40,7 +40,7 @@ $options = array(
   );
   
   $context  = stream_context_create( $options );
-  $result = file_get_contents( 'https://boiling-beach-64522.herokuapp.com/text-search', false, $context );
+  $result = file_get_contents( 'https://still-hollows-62050.herokuapp.com/text-search', false, $context );
   $response = json_decode($result, true);
 
 ?>
@@ -62,7 +62,7 @@ $options = array(
     <tr>
     <?php foreach ($response as $men){
             $ch = curl_init();
-            $url = 'https://boiling-beach-64522.herokuapp.com/users/' . $men['receptant'];
+            $url = 'https://still-hollows-62050.herokuapp.com/users/' . $men['receptant'];
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $res = curl_exec($ch);
@@ -87,4 +87,4 @@ $options = array(
 </html>
 
 
-<?php include('../../templates/footer_volver_a_mensajeria.html'); ?>
+<?php include('../../templates/footer.html'); ?>
