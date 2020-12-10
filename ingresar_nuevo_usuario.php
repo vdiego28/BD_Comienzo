@@ -23,7 +23,7 @@
         <br/></br>
         <input type="submit" value="Regresar">
         </form>
-    <?php endif
+    <?php endif;
 
     if ($total==0):
         $agregar = "INSERT INTO usuarios VALUES ('%nombre%', '%edad%', '%pasaporte%','%nacionalidad%', '%contrasena%');"
@@ -35,7 +35,7 @@
         <br/><br/>
         <input type="submit" value="ingresar">
         </form>
-    <?php endif ?>
+    <?php endif; ?>
 
 </body>
 </html>
