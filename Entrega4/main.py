@@ -133,16 +133,11 @@ def search_messages():
     '''
     Obtiene el contenido del body, si este no tiene todas las llaves o está vacio retornamos el error
     '''
-    try:
-        recived = {key: request.json[key] for key in SEARCH_KEYS}
-        if not recived:
-            result = list(messages.find({}, {"_id": 0}))
-            return json.jsonify(result)
-    except KeyError:
-        return json.jsonify([{"success": "Falta(n) llave(s)"}])
-    except TypeError:
-        result = list(messages.find({}, {"_id": 0}))
-        return json.jsonify(result)
+    recived = request.json
+    for llave in SEARCH_KEYS:
+        if llave not in recived.keys():
+            recived[llave] = []
+
     busqueda_buena = ""
     d_malos = []
 
@@ -172,16 +167,25 @@ def search_messages():
     if len(recived["forbidden"]) > 0:
         negativ = "\"" + "\" \"".join(recived["forbidden"]) + "\" "
         alternative = " ".join(recived["forbidden"])
-        d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": alternative}}]}, {"_id": 0}))
-
+        if recived["userId"] != []:
+            d_malos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": alternative}}]}, {"_id": 0}))
+        else:
+            d_malos = list(messages.find({"$text": {"$search": alternative}}, {"_id": 0}))
     '''
     Si no hay palabras obligatorias o deseadas entonces buscamos todos los mensajes del usuario
     sino, buscamos las palabras
     '''
     if len(busqueda_buena) > 0:
-        d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
+        if recived["userId"] != []:
+            d_buenos = list(messages.find({"$and": [{"sender": recived["userId"]},{"$text": {"$search": busqueda_buena}}]}, {"_id": 0}))
+        else:
+            d_buenos = list(messages.find({"$text": {"$search": busqueda_buena}}, {"_id": 0}))
+
     else:
-        d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+        if recived["userId"] != []:
+            d_buenos = list(messages.find({"sender": recived["userId"]}, {"_id": 0, "mid": 1}))
+        else:
+            d_buenos = list(messages.find({}, {"_id": 0, "mid": 1}))
 
     '''
     Guardamos los ids de los mensajes dentro de Sets y luego eliminamos los resultados de las palabras prohibidas

@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 
 @app.route("/receptant/<int:receptant>")
-def get_message(receptant):
+def message_recived(receptant):
     '''
     Obtiene el message de id entregada
     '''
@@ -34,8 +34,8 @@ def get_message(receptant):
         return json.jsonify([{"success": False, "Error": f"No existe un mensaje con uid {mid}"}])
 
 
-@app.route("/sent/<int:sender>")
-def get_message(sender):
+@app.route("/sender/<int:sender>")
+def message_send(sender):
     '''
     Obtiene el message de id entregada
     '''
@@ -53,16 +53,16 @@ def create_messages(sender):
     Crea un nuevo messages en la base de datos
     Se  necesitan todos los atributos de model, a excepcion de _id
     '''
+    MESSAGE_KEYS_2 = ['date', 'lat', 'long', 'message', 'receptant']
     try:
-        MESSAGE_KEYS2 = ['date', 'lat', 'long', 'message', 'receptant']
         faltantes = []
-        for key in MESSAGE_KEYS2:
+        for key in MESSAGE_KEYS_2:
             if key not in request.json.keys():
                 faltantes.append(key)
 
         if faltantes:
             return json.jsonify([{'success': False, 'Required Keys': [key for key in faltantes]}])
-        data = {key: request.json[key] for key in MESSAGES_KEYS2}
+        data = {key: request.json[key] for key in MESSAGE_KEYS_2}
         mid = messages.find_one(sort=[("mid", -1)])["mid"] + 1
         data["sender"] = sender
         data['mid'] = mid
@@ -71,7 +71,6 @@ def create_messages(sender):
 
     except KeyError:  # Si algún valor no sirve como llave...
         return json.jsonify([{"success": 'False', 'Error': 'Keys invalidas entregadas'}])
-
 
 
 @app.route("/text-search")
