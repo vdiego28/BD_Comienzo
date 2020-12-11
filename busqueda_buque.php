@@ -46,18 +46,11 @@
             <tr>
             <?php foreach ($response as $message){
                     # Aquí se añade un ejemplo en el que se obtiene el usuario que recibe el mensaje
-                    $ch = curl_init();
-                    $url = 'https://still-hollows-62050.herokuapp.com/users/' . $message['receptant'];
-                    curl_setopt($ch, CURLOPT_URL, $url);
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    $res = curl_exec($ch);
-                    curl_close($ch);
-                    $receptant = json_decode($res, true);
         
                     echo "<tr> <td>" .  $message['date'] . "</td>";
                     echo "<td>" . $message['lat'] . "</td>";
                     echo "<td>" . $message['long'] . "</td>";
-                    echo "<td>" . $receptant["name"] . "</td>";
+                    echo "<td>" . $message["sender"] . "</td>";
                     echo "<td>" . $message['mid'] . "</td>";
                     echo "<td>" . $message['message'] . "</td> </tr>";
             }
