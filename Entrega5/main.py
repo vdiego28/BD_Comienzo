@@ -33,18 +33,28 @@ def home():
 
 @app.route("/busqueda-buque")
 def buque():
+    '''
+    Usar agregacion para cambiar el formato de la fecha en la base de datos
+    '''
     recived = request.json
-    inicio = datetime.strptime(recived["fecha_inicio"], '%m/%d/%Y')
-    fin = datetime.strptime(recived["fecha_termino"], '%m/%d/%Y')
+    inicio = recived["fecha_inicio"].split("-")
+    inicio_correcto = inicio[2] + inicio[1] + inicio[0]
+    fin = recived["fecha_inicio"].split("-")
+    fin_correcto = fin[2] + fin[1] + fin[0]
+    inicio_correcto = datetime.strptime(recived["fecha_inicio"], '%Y-%d-%m')
+    fin_correcto = datetime.strptime(recived["fecha_termino"], '%Y-%d-%m')
     user = recived["userId"]
     words = recived["palabras_clave"].replace(",", " ")
     valor_or = {"search": {"$or": [{"sender": user}, {"receptant": user}]}}
-    buque_text = list(messages.find({"$text": {"$search": words}}, {"_id": 0, "mid": 1}))
-    buques_user = list(messages.find({"$or": [{"sender": user}, {"receptant": user}]}, {"_id": 0, "mid": 1}))
-    buques_date = list(messages.find({"date": {"$gte": inicio, "$lte": fin}}, {"_id": 0, "mid": 1}))
-    result = set(buques_date).intersection(set(buques_user)).intersection(set(buque_text))
-    final = list(messages.find({'mid': {"$in": result}}, {"_id": 0}))
-    return final
+    buque_text_l = list(messages.find({"$text": {"$search": words}}, {"_id": 0, "mid": 1}))
+    buque_text = set([i['mid'] for i in buque_text_l])
+    buques_user_2 = list(messages.find({"$or": [{"sender": user}, {"receptant": user}]}, {"_id": 0, "mid": 1}))
+    buques_user = set([i['mid'] for i in buques_user_2])
+    buques_date_2 = list(messages.find({"date": {"$gte": inicio, "$lte": fin}}, {"_id": 0, "mid": 1}))
+    buques_date = set([i['mid'] for i in buques_date_2])
+    result = buques_date.intersection(buques_user).intersection(buque_text)
+    final = list(messages.find({'mid': {"$in": list(result)}}, {"_id": 0}))
+    return json.jsonify(final)
 
 
 @app.route("/receptant/<int:receptant>")

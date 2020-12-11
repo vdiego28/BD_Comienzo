@@ -26,7 +26,7 @@
     );
     
     $context  = stream_context_create( $options );
-    $result = file_get_contents( 'https://still-hollows-62050.herokuapp.com/busqueda-buque', false, $context );
+    $result = file_get_contents( 'https://base-entrega.herokuapp.com/busqueda-buque', false, $context );
     $response = json_decode($result, true);
 
     ?>
