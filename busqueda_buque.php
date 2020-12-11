@@ -1,4 +1,4 @@
-<?php include('../templates/header.html');   ?>
+<?php include('templates/header.html');   ?>
 
 <body>
     <?php 
@@ -59,4 +59,4 @@
         </table>
     </div>
 
-<?php include('../templates/footer.html'); ?>
+<?php include('templates/footer.html'); ?>
