@@ -25,8 +25,8 @@
 <br>
 
 <form align="center" action="form_rec.php">
-  Ir a busqueda de mensaje recibidos
-  <input type="hidden" id="1">
+    Ir a busqueda de mensaje recibidos
+        <input type="hidden" name="current_user" value="1">
   <input type="submit" value="Buscar">
 </form>
 
@@ -37,7 +37,7 @@
 <form align="center" action="busqueda_texto_mensaje.php">
     Busqueda de mensajes avanzada
     userId:
-    <input type="text" name="userId">
+    <input type="number" name="userId">
     </br>
     Obligatorias:
     <input type="text" name="required">

@@ -37,16 +37,17 @@ def buque():
     Usar agregacion para cambiar el formato de la fecha en la base de datos
     '''
     recived = request.json
-    inicio = recived["fecha_inicio"].split("-")
-    inicio = [inicio[2], inicio[1], inicio[0]]
+    if not recived:
+        return {"Succes": "nada"}
+    inicio = recived["fecha_inicio"].replace("-", "/")
+    # inicio = [inicio[2], inicio[1], inicio[0]]
     inicio_correcto = "/".join(inicio)
-    fin = recived["fecha_termino"].split("-")
-    fin = [fin[2], fin[1], fin[0]]
+    fin = recived["fecha_termino"].replace("-", "/")
+    # fin = [fin[2], fin[1], fin[0]]
     fin_correcto = "/".join(fin)
-    inicio_correcto = datetime.strptime(inicio_correcto, '%Y/%d/%m')
-    fin_correcto = datetime.strptime(fin_correcto, '%Y/%d/%m')
-    print(inicio_correcto)
-    print(fin_correcto)
+    print(inicio, fin)
+    inicio_correcto = datetime.strptime(inicio, '%Y/%m/%d')
+    fin_correcto = datetime.strptime(fin, '%Y/%m/%d')
     user = recived["userId"]
     words = recived["palabras_clave"].replace(",", " ")
     valor_or = {"search": {"$or": [{"sender": user}, {"receptant": user}]}}
@@ -69,36 +70,57 @@ def buque():
     result = buques_date_inicio.intersection(buques_user).intersection(buque_text).intersection(buques_date_fin)
     final = list(messages.find({'mid': {"$in": list(result)}}, {"_id": 0}))
 
-    print("user", buques_user_2)
-    print("palabras", buque_text_l)
-    print("inicio", buques_date_i)
-    print("fin", buques_date_f)
     return json.jsonify(final)
 
 
-@app.route("/receptant/<int:receptant>")
-def message_recived(receptant):
+@app.route("/receptant")
+def message_recived():
     '''
     Obtiene el message de id entregada
     '''
+    recived = request.json
+    if not recived:
+        return json.jsonify({"success": False, "Error": f"No entrega mensaje"})
+    receptant = recived["userId"]
     message = list(messages.find({"receptant": receptant}, {"_id": 0}))
     if len(message) != 0:
         return json.jsonify(message)
     else:
-        return json.jsonify([{"success": False, "Error": f"No existe un mensaje con uid {mid}"}])
+        return json.jsonify([{"success": False, "Error": f"No existe un mensaje enviado a {receptant}"}])
 
 
-@app.route("/sender/<int:sender>")
-def message_send(sender):
+@app.route("/sender")
+def message_send():
     '''
     Obtiene el message de id entregada
     '''
+    sender = request.json
+    if not sender:
+        return json.jsonify([{"success": False, "Error": f"No entrega mensaje"}])
+    sender = sender["userId"]
     message = list(messages.find({"sender": sender}, {"_id": 0}))
     if len(message) != 0:
         return json.jsonify(message)
     else:
         return json.jsonify(
-            [{"success": False, "Error": f"No existe un mensaje con uid {mid}"}])
+            [{"success": False, "Error": f"No existe un mensaje con sender {sender}"}])
+
+
+@app.route("/users")
+def message_user():
+    '''
+    Obtiene el message de id entregada
+    '''
+    sender = request.json
+    if not sender:
+        return json.jsonify([{"success": False, "Error": f"No entrega mensaje"}])
+    sender = sender["userId"]
+    message = list(messages.find({"receptant": sender}, {"_id": 0}))
+    if len(message) != 0:
+        return json.jsonify(message)
+    else:
+        return json.jsonify(
+            [{"success": False, "Error": f"No existe un mensaje con sender {sender}"}])
 
 
 @app.route("/messages/<int:sender>", methods=['POST'])

@@ -26,7 +26,7 @@
     );
     
     $context  = stream_context_create( $options );
-    $result = file_get_contents( 'https://https://base-entrega.herokuapp.com/text-search', false, $context );
+    $result = file_get_contents( 'https://base-entrega.herokuapp.com/text-search', false, $context );
     $response = json_decode($result, true);
 
     ?>
@@ -47,7 +47,7 @@
             <?php foreach ($response as $message){
                     # Aquí se añade un ejemplo en el que se obtiene el usuario que recibe el mensaje
                     $ch = curl_init();
-                    $url = 'https://https://base-entrega.herokuapp.com.herokuapp.com/users/' . $message['receptant'];
+                    $url = 'https://base-entrega.herokuapp.com.herokuapp.com/users/' . $message['receptant'];
                     curl_setopt($ch, CURLOPT_URL, $url);
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                     $res = curl_exec($ch);
