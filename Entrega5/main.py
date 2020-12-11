@@ -1,5 +1,6 @@
 from flask import Flask, json, request
 from pymongo import MongoClient
+from datetime import datetime
 
 USER = "grupo119"
 PASS = "grupo119"
@@ -28,6 +29,22 @@ def home():
     Página de inicio
     '''
     return "<h1>¡Hola!</h1>"
+
+
+@app.route("/busqueda-buque")
+def buque():
+    recived = request.json
+    inicio = datetime.strptime(recived["fecha_inicio"], '%m/%d/%Y')
+    fin = datetime.strptime(recived["fecha_termino"], '%m/%d/%Y')
+    user = recived["userId"]
+    words = recived["palabras_clave"].replace(",", " ")
+    valor_or = {"search": {"$or": [{"sender": user}, {"receptant": user}]}}
+    buque_text = list(messages.find({"$text": {"$search": words}}, {"_id": 0, "mid": 1}))
+    buques_user = list(messages.find({"$or": [{"sender": user}, {"receptant": user}]}, {"_id": 0, "mid": 1}))
+    buques_date = list(messages.find({"date": {"$gte": inicio, "$lte": fin}}, {"_id": 0, "mid": 1}))
+    result = set(buques_date).intersection(set(buques_user)).intersection(set(buque_text))
+    final = list(messages.find({'mid': {"$in": result}}, {"_id": 0}))
+    return final
 
 
 @app.route("/receptant/<int:receptant>")
