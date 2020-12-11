@@ -38,11 +38,13 @@ def buque():
     '''
     recived = request.json
     inicio = recived["fecha_inicio"].split("-")
-    inicio_correcto = inicio[2] + inicio[1] + inicio[0]
+    inicio = [inicio[2], inicio[1], inicio[0]]
+    inicio_correcto = "/".join(inicio)
     fin = recived["fecha_inicio"].split("-")
-    fin_correcto = fin[2] + fin[1] + fin[0]
-    inicio_correcto = datetime.strptime(recived["fecha_inicio"], '%Y-%d-%m')
-    fin_correcto = datetime.strptime(recived["fecha_termino"], '%Y-%d-%m')
+    fin = [fin[2], fin[1], fin[0]]
+    fin_correcto = "/".join(fin)
+    inicio_correcto = datetime.strptime(inicio_correcto, '%Y/%d/%m')
+    fin_correcto = datetime.strptime(fin_correcto, '%Y/%d/%m')
     user = recived["userId"]
     words = recived["palabras_clave"].replace(",", " ")
     valor_or = {"search": {"$or": [{"sender": user}, {"receptant": user}]}}
@@ -50,10 +52,25 @@ def buque():
     buque_text = set([i['mid'] for i in buque_text_l])
     buques_user_2 = list(messages.find({"$or": [{"sender": user}, {"receptant": user}]}, {"_id": 0, "mid": 1}))
     buques_user = set([i['mid'] for i in buques_user_2])
-    buques_date_2 = list(messages.find({"date": {"$gte": inicio, "$lte": fin}}, {"_id": 0, "mid": 1}))
-    buques_date = set([i['mid'] for i in buques_date_2])
-    result = buques_date.intersection(buques_user).intersection(buque_text)
+
+    buques_date_i = list(messages.find(
+        {"$expr": {
+            "$gte": [{ "$dateFromString": { "dateString": "$date" }}, inicio_correcto ]}}, {"_id": 0, "mid": 1}))
+
+    buques_date_f = list(messages.find(
+        {"$expr": {
+            "$lte": [{ "$dateFromString": { "dateString": "$date" }}, fin_correcto ]}}, {"_id": 0, "mid": 1}))
+
+    buques_date_inicio = set([i['mid'] for i in buques_date_i])
+    buques_date_fin = set([i['mid'] for i in buques_date_f])
+
+    result = buques_date_inicio.intersection(buques_user).intersection(buque_text) #.intersection(buques_date_fin)
     final = list(messages.find({'mid': {"$in": list(result)}}, {"_id": 0}))
+
+    print("user", buques_user_2)
+    print("palabras", buque_text_l)
+    print("inicio", buques_date_i)
+    print("fin", buques_date_f)
     return json.jsonify(final)
 
 
