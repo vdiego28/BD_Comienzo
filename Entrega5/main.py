@@ -40,11 +40,13 @@ def buque():
     inicio = recived["fecha_inicio"].split("-")
     inicio = [inicio[2], inicio[1], inicio[0]]
     inicio_correcto = "/".join(inicio)
-    fin = recived["fecha_inicio"].split("-")
+    fin = recived["fecha_termino"].split("-")
     fin = [fin[2], fin[1], fin[0]]
     fin_correcto = "/".join(fin)
     inicio_correcto = datetime.strptime(inicio_correcto, '%Y/%d/%m')
     fin_correcto = datetime.strptime(fin_correcto, '%Y/%d/%m')
+    print(inicio_correcto)
+    print(fin_correcto)
     user = recived["userId"]
     words = recived["palabras_clave"].replace(",", " ")
     valor_or = {"search": {"$or": [{"sender": user}, {"receptant": user}]}}
@@ -64,7 +66,7 @@ def buque():
     buques_date_inicio = set([i['mid'] for i in buques_date_i])
     buques_date_fin = set([i['mid'] for i in buques_date_f])
 
-    result = buques_date_inicio.intersection(buques_user).intersection(buque_text) #.intersection(buques_date_fin)
+    result = buques_date_inicio.intersection(buques_user).intersection(buque_text).intersection(buques_date_fin)
     final = list(messages.find({'mid': {"$in": list(result)}}, {"_id": 0}))
 
     print("user", buques_user_2)
